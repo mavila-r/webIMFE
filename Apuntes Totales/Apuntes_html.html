@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Apuntes totales</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Tere Ávila Rey">
+		<meta name="generator" content="Editor de Texto Linux">
+		<meta name=”viewport” content=”width=device-width,initial-scale 1.0”>
+		<meta name=”keywords” content=”html5 estructura etiquetas atributos”>
+		<meta name=”description” content=”Apuntes totales de HTML5”>
+		<!-- <link rel="stylesheet" href="misestilos.css"> -->
+		<link rel="icon" href="miicono.ico">
+	</head>
+	<body>
+		<h1>Apuntes Totales</h1>
+		<h2>Etiquetas de texto</h2>
+		<h1>Título 1</h1>
+		<h2>Título 2</h2>
+		<h3>Título 3</h3>
+		<h4>Título 4</h4>
+		<h5>Título 5</h5>
+		<h6>Título 6</h6>
+		<p>Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. </p>
+		<q>Esto es una cita chiquita.</q>
+		<blockquote>
+			Esto es una cita larga. Esto es una cita larga. Esto es una cita larga. Esto es una cita larga. Esto es una cita larga. Esto es una cita larga. Esto es una cita larga. Esto es una cita larga. Esto es una cita larga. Esto es una cita larga. 
+		</blockquote>
+		<h4>Esto es una lista sin ordenar</h4>
+		<ul>
+			<li>Primer Elemento</li>
+			<li>Segundo Elemento</li>
+			<li>Tercer Elemento</li>
+			...
+			<li>Último Elemento</li>
+		</ul>
+		<h4>Esto es una lista ordenada</h4>
+		<ol>
+			<li>Primer Elemento</li>
+			<li>Segundo Elemento</li>
+			<li>Tercer Elemento</li>
+			...
+			<li>Último Elemento</li>
+		</ol>
+		<h4>Esto es una lista de definiciones</h4>
+		<dl>
+			<dt>Término</dt>
+			<dd>Definición</dd>
+			...
+			<dt>Término</dt>
+			<dd>Definición</dd>
+		</dl>
+		<p>Esto es un párrafo con saltos de línea.<br>Esto es un párrafo con saltos de línea.<br>Esto es un párrafo con saltos de línea.<br>Esto es un párrafo con saltos de línea.<br>Esto es un párrafo con saltos de línea.<br></p>
+		<h4>Esto es un texto preformateado</h4>
+		<pre>
+#include &lt;stdio.h&gt;
+
+int main()
+{
+	printf("Hola Mundo");
+	return (0);
+}
+		</pre>
+		<h4>Estas son las variaciones de texto</h4>
+		<p>
+			Este texto (b) tiene <b>negrita</b>.<br>
+			Este texto (em) tiene <em>enfasis</em>.<br>
+			Este texto (strong) es <strong>importante</strong>.<br>
+			Este texto (mark) está <mark>marcado</mark>.<br>
+			Este texto (i) está en <i>cursiva</i>.<br>
+			Este texto (cite) es una <cite>cita</cite>.<br>
+			Este texto (dfn) es una <dfn>definición</dfn>.<br>
+			Este texto (sup) es un <sup>superíndice</sup>.<br>
+			Este texto (sub) es un <sub>subíndice</sub>.<br>
+			Este texto (u) está <u>subrayado</u>.<br>
+			Este texto (ins) está <ins>insertado</ins>.<br>
+			Este texto (del) está <del>eliminado</del>.<br>
+			Este texto (code) es un código: <br>
+		<code>
+			#include &lt;stdio.h&gt;
+			
+			int main()
+			{
+				printf("Hola Mundo");
+				return (0);
+			}
+		</code><br>
+			Este texto (address) es una dirección: <br>
+			Nombre<br><br>
+			Calle Nº<br>
+			Ciudad<br>
+			País<br>
+		</p>
+		<hr>
+		<h2>Etiquetas de hipervínculo</h2>
+		<p id="enlaces">
+			<a href="https://educem.com">Centro de Enseñanza Educem</a><br>
+			<a href="./prueba.html">Página local de prueba</a><br>
+			<a href="mailto:tavilarey@gmail.com">Mi correo profesional</a><br>
+			<a href="#enlaces">Sección enlaces</a><br>
+			<a href="https://duckduckgo.com/" target="_blank">Buscador DuckDuckGO que se abre en otra pestaña</a><br>
+			<a href="./Playa.jpeg" download="Descarga.jpeg">Descarga Archivo</a><br>
+		</p>
+		
+		<h4>Enlaces con Atributos Nuevos</h4>
+		<a href="https://netflix.es" rel="sponsored">Enlace a página de pago</a><br>
+		<a href="https://youtube.com" rel="nofollow">Enlace con nofollow a página externa</a><br>
+		<a href="https://twitter.com" rel="ugc">Enlace a contenido ugc</a><br>
+		
+		<h4>Imágenes y botones</h4>
+		
+		<a href="./prueba.html"> <img src="Playa.jpeg" alt="Página de prueba" style="width:100px;"></a><br>
+		<button onclick="document.location='prueba.html'">Archivo de prueba</button>
+		<hr>
+		<h2>Etiquetas de imágenes</h2>
+		<p>Esto es un texto para comprobar que el vspace funciona</p>
+		<img border="5px" src="./SpeakNow.jpg" alt="Portada del disco Speak Now (Taylor's Version) de Taylor Swift" width="100px" height="150px" vspace="50px">
+		<img src="./SpeakNow.jpg" alt="Portada del disco Speak Now (Taylor's Version) de Taylor Swift" width="50px" vspace="70px">
+		<img src="./SpeakNow.jpg" alt="Portada del disco Speak Now (Taylor's Version) de Taylor Swift" width="30%" height="30%">
+		<p>Esto es un texto para comprobar que el vspace funciona</p>
+		
+		<p><img src="./SpeakNow.jpg" alt="Portada del disco Speak Now (Taylor's Version) de Taylor Swift" width="30%" style="float:right;">Esto es un texto para comprobar la propiedad float. Esto es un texto para comprobar la propiedad float. Esto es un texto para comprobar la propiedad float. Esto es un texto para comprobar la propiedad float. Esto es un texto para comprobar la propiedad float. Esto es un texto para comprobar la propiedad float.</p>
+		
+		<img src="./SpeakNow.gif" alt="Gif en movimiento de Taylor Swift" width="200px" vspace="50px">
+		<img src="https://24.media.tumblr.com/8b36e3f69cf7be2cc0d8a543d391859d/tumblr_mumfy5iDn81sx63hpo1_500.gif" alt="Gif en movimiento de Taylor Swift" width="220px" height="220px">
+		<hr>
+		<h2>Etiquetas para tablas</h2>
+		
+		<table>
+		<br><caption>Tabla Sin Borde</caption>
+		<thead>
+			<tr>
+			<th>Head0</th>
+			<th>Head1</th>
+			<th>Head2</th>
+			<th>Head3</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+			<td>A0</td>
+			<td>A1</td>
+			<td>A2</td>
+			<td>A3</td>
+			</tr>
+			<tr>
+			<td>B0</td>
+			<td>B1</td>
+			<td>B2</td>
+			<td>B3</td>
+			</tr>
+			<tr>
+			<td>C0</td>
+			<td>C1</td>
+			<td>C2</td>
+			<td>C3</td>
+			</tr>
+			<tr>
+			<td>D0</td>
+			<td>D1</td>
+			<td>D2</td>
+			<td>D3</td>
+			</tr>
+			<tr>
+			<td>E0</td>
+			<td>E1</td>
+			<td>E2</td>
+			<td>E3</td>
+			</tr>
+		</tbody>
+		<tfoot>
+		<tr><td>Pie de tabla</td></tr>
+		</tfoot>
+		</table>
+		<table border="1px" >
+		<br><caption>Tabla Con Borde y Colgroup</caption>
+		<colgroup>
+		<col span="2" style="background-color:yellow;">
+		</colgroup>
+		<thead>
+			<tr>
+			<th>Head0</th>
+			<th>Head1</th>
+			<th>Head2</th>
+			<th>Head3</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+			<td>A0</td>
+			<td>A1</td>
+			<td>A2</td>
+			<td>A3</td>
+			</tr>
+			<tr>
+			<td>B0</td>
+			<td>B1</td>
+			<td>B2</td>
+			<td>B3</td>
+			</tr>
+			<tr>
+			<td>C0</td>
+			<td>C1</td>
+			<td>C2</td>
+			<td>C3</td>
+			</tr>
+			<tr>
+			<td>D0</td>
+			<td>D1</td>
+			<td>D2</td>
+			<td>D3</td>
+			</tr>
+		</tbody>
+		</table>
+		<table border="1px" >
+		<br><caption>Tabla Con Borde y Header Vertical</caption>
+		<thead>
+			<tr>
+			<th>Head0</th>
+			<th>Head1</th>
+			<th>Head2</th>
+			<th>Head3</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+			<th>HeadA</th>
+			<td>A1</td>
+			<td>A2</td>
+			<td>A3</td>
+			</tr>
+			<tr>
+			<th>HeadB</th>
+			<td>B1</td>
+			<td>B2</td>
+			<td>B3</td>
+			</tr>
+			<tr>
+			<th>HeadC</th>
+			<td>C1</td>
+			<td>C2</td>
+			<td>C3</td>
+			</tr>
+			<tr>
+			<th>HeadD</th>
+			<td>D1</td>
+			<td>D2</td>
+			<td>D3</td>
+			</tr>
+			<tr>
+			<th>HeadE</th>
+			<td>E1</td>
+			<td>E2</td>
+			<td>E3</td>
+			</tr>
+		</tbody>
+		</table>
+		<table border="1px" >
+		<br><caption>Tabla Con Borde, Colspan y Rowspan</caption>
+		<thead>
+			<tr>
+			<th>Head0</th>
+			<th>Head1</th>
+			<th>Head2</th>
+			<th>Head3</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+			<td>A0</td>
+			<td>A1</td>
+			<td>A2</td>
+			<td>A3</td>
+			</tr>
+			<tr>
+			<td colspan="3">B0</td>
+			<td>B3</td>
+			</tr>
+			<tr>
+			<td>C0</td>
+			<td>C1</td>
+			<td>C2</td>
+			<td rowspan="3">C3</td>
+			</tr>
+			<tr>
+			<td>D0</td>
+			<td>D1</td>
+			<td>D2</td>
+			</tr>
+			<tr>
+			<td>E0</td>
+			<td>E1</td>
+			<td rowspan="2">E2</td>
+			</tr>
+			<tr>
+			<td>F0</td>
+			<td>F1</td>
+			<td>F3</td>
+			</tr>
+			<tr>
+			<td>G0</td>
+			<td>G1</td>
+			<td>G2</td>
+			<td>G3</td>
+			</tr>
+		</tbody>
+		</table>
+		
+	</body>
+</html>
