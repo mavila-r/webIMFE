@@ -13,7 +13,7 @@
 	</head>
 	<style>
 	body{
-	background-color: black;
+	background-color: #4a0303;
 	}
 	h1, h2, h3{
 	text-align:center;
@@ -23,14 +23,29 @@
 	#inicio{
 	text-align:justify;
 	color:yellow;
-	width:60%;
+	width:40%;
 	margin:auto;
+	font-weight: bold;
+	font-size:18px;
 	}
 	p, q{
 	text-align:justify;
 	color:yellow;
 	width:90%;
 	margin:auto;
+	}
+	#Sinopsis{
+	text-align:justify;
+	color:yellow;
+	width:90%;
+	margin:auto;
+	font-size:15px;
+	font-style: italic;
+	}
+	.names{
+	text-align:center;
+	color:yellow;
+	font-size:12px;
 	}
 	table{
 	width:80%;
@@ -40,72 +55,253 @@
 	}
 	td{
 	color:yellow;
-	font-size:22px;
+	font-size:16px;
+	}
+	header{
+	width: 99%;
+	height: 170px;
+	border: 1px solid #942c2c;
+	background-color: black;
+	margin-top: 15px;
+	margin-bottom: 15px;
 	}
 	aside{
-	width: 15%;
-	align: right;
-	border: 1px white;
+	width: 20%;
+	float: right;
+	margin-right: 10px;
 	}
+	.lateral{
+	width: 100%;
+	border: 1px solid #942c2c;
+	float: right;
+	margin-right: 10px;
+	margin-bottom: 15px;
+	background-color: black;
+	}
+	main{
+	width: 75%;
+	border: 1px solid #942c2c;
+	margin-right: 10%;
+	background-color: black;
+	}
+	footer{
+	width: 99%;
+	height: 110px;
+	border: 1px solid #942c2c;
+	background-color: black;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	}
+	#Crono, #Crono td{
+	width: 85%;
+	border: 1px solid #942c2c;
+	border-collapse: collapse;
+	padding: 10px;
+	color:yellow;
+	font-size:75%;
+	margin-bottom: 15px;
+	}
+		#Crono th{
+	width: 25%;
+	border: 1px solid #942c2c;
+	border-collapse: collapse;
+	padding: 10px;
+	color:yellow;
+	font-size:75%;
+	}
+	#Quotes{
+	width: 65%;
+	margin: auto;
+	}
+	.Autor{
+	text-align: right;
+	font-style: italic;
+	}
+	a{
+	color: #942c2c;
+	font-size: 14px;
+	}
+	ul {
+  	list-style: none;
+  	width: 75%;
+  	color: yellow;
+  	text-align: justify;
+	}
+
+	ul li::before {
+	  content: "\2022";
+	  color: #942c2c;
+	  display: inline-block;
+	  width: 1em;
+	  margin-left: -1em;
+	}
+	#ir-arriba {
+	position: fixed;
+	bottom:20px;
+	right:40px;
+}
 	</style>
 	<body>
-		<aside>
-		<p>Esto es un bloque aside. Esto es un bloque aside.Esto es un bloque aside.Esto es un bloque aside.Esto es un bloque aside.Esto es un bloque aside.Esto es un bloque aside.Esto es un bloque aside.Esto es un bloque aside.Esto es un bloque aside.Esto es un bloque aside.Esto es un bloque aside.Esto es un bloque aside.Esto es un bloque aside.Esto es un bloque aside.Esto es un bloque aside.Esto es un bloque aside.Esto es un bloque aside.Esto es un bloque aside.Esto es un bloque aside.Esto es un bloque aside.Esto es un bloque aside.</p>
-		</aside>
-		<main>
-		<h1>Episodio III - La Venganza de los Sith</h1>
-		<p id="inicio">¡Guerra! La República se desmorona bajo los ataques del despiadado Lord Sith, el Conde Dooku. Hay héroes en ambos bandos. El mal está por doquier. En una contundente jugada, el diabólico líder droide, el General Grievous, ha irrumpido en la capital de la República y ha secuestrado al Canciller Palpatine, líder del Senado  Galáctico. Mientras el ejército droide separatista trata de huir de la capital sitiada con su valioso rehén, dos Caballeros Jedi lideran una misión desesperada para rescatar al Canciller cautivo....</p>
+		<header>
+		<div style="margin-top:14px;">
+		<a href="starwars.html" target="_blank"><img src="home.png" height="130px"style="float:left;margin-left:30px;"></a>
+		<img src="https://static.wikia.nocookie.net/the-jh-movie-collection-official/images/f/f9/Sw-ep3-logo.png/revision/latest?cb=20200408153628" height="130px" style="float:left;margin-left:30px;">
+<h1>Episodio III<br><br> La Venganza de los Sith</h1>
+		</div>
+		</header>
 		
-		<h2>Lugares destacados</h2>
+		<aside>
+		<div class="lateral">
+		<h3>Índice</h3>
+		<ul>
+		<li><a href="#Sinopsis">Sinopsis</a></li>
+		<li><a href="#Lugares">Lugares Destacados</a></li>
+		<li><a href="#Guerra">Fin de la Guerra</a></li>
+			<ul>
+			<li><a href="#Grievous">Muerte de Grievous</a></li>
+			<li><a href="#Dooku">Muerte de Dooku</a></li>
+			<li><a href="#Orden66">Orden 66</a></li>
+			<li><a href="#Jedis">Jedis caídos</a></li>
+			<li><a href="#Republica">Fin de República</a></li>
+			</ul>
+		<li><a href="#Citas">Citas de la película</a></li>
+		</ul>
+		</div>
+		<div class="lateral">
+		<h3>Dentro del Universo</h3>
+		<table id="Crono">
+		<colgroup>
+		<col span="1" style="text-color: white; background-color: #4a0303;">
+		</colgroup>
+			<tr>
+				<th>Cronología</th>
+				<td>19 ABY, 3 años después de El Ataque de los Clones; 19 años antes de Una Nueva Esperanza</td>
+			</tr>
+			<tr>
+				<th>Secuela de</th>
+				<td>Episodio II: El Ataque de los Clones <br><br> The Clone Wars</td>
+			</tr>
+			<tr>
+				<th>Precuela de</th>
+				<td>Rebels<br><br>Rogue One: Una Historia de Star Wars</td>
+			</tr>
+		</table>
+		</div>
+		<div class="lateral">
+		<h3>Personajes</h3>
+		<a href="https://starwars.fandom.com/es/wiki/Anakin_Skywalker" target="_blank"><img src="https://static.wikia.nocookie.net/esstarwars/images/6/6f/Anakin_Skywalker_RotS.png/revision/latest?cb=20160226204939" style="width:90%;margin-left:5%;" alt="Anakin Skywlker"></a>
+		<p class="names">Anakin Skywalker</p><br>
+		<a href="https://starwars.fandom.com/es/wiki/Obi-Wan_Kenobi" target="_blank"><img src="https://static.wikia.nocookie.net/starwars/images/4/48/3683533_280.jpeg/revision/latest?cb=20190425202641&path-prefix=hu" style="width:90%;margin-left:5%;" alt="Obi Wan Kenobi"></a>
+		<p class="names">Obi Wan Kenobi</p><br>
+		<a href="https://starwars.fandom.com/es/wiki/Padme_Amidala" target="_blank"><img src="https://i.pinimg.com/474x/3d/39/14/3d3914319c796a8bea7bf01320995c9d--padm%C3%A9-amidala-queen-amidala.jpg" style="width:90%;margin-left:5%;" alt="Padme Amidala"></a>
+		<p class="names">Padme Amidala</p><br>
+		<a href="https://starwars.fandom.com/es/wiki/Palpatine/Leyendas" target="_blank"><img src="https://resize-elle.ladmedia.fr/rcrop/638,,forcex/img/var/plain_site/storage/images/people/la-vie-des-people/news/stars-wars-a-quoi-ressemblent-ils-aujourd-hui/palpatine-en-2005-dans-star-wars-episode-iii-la-revanche-des-sith/54169688-1-fre-FR/Palpatine-en-2005-dans-Star-Wars-episode-III-La-Revanche-des-Sith.jpg" style="width:90%;margin-left:5%;" alt="Palpatine"></a>
+		<p class="names">Palpatine</p><br>
+		<a href="https://starwars.fandom.com/es/wiki/Yoda" target="_blank"><img src="https://static.wikia.nocookie.net/esstarwars/images/d/d6/Yoda_SWSB.png/revision/latest?cb=20180105191224" style="width:90%;margin-left:5%;" alt="Yoda"></a>
+		<p class="names">Maestro Yoda</p><br>
+		<a href="https://starwars.fandom.com/es/wiki/Mace_Windu" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/en/b/bf/Mace_Windu.png" style="width:90%;margin-left:5%;" alt="Windu"></a>
+		<p class="names">Mace Windu</p><br>
+		</div>
+		<div class="lateral">
+		<h3>10 Curiosidades</h3>
+		<ul>
+		<li>Inicialmente la película iba a tener un duración de casi 4 horas.</li><br>
+		<li>George Lucas diseñó el mundo volcánico de Mustafar en base a lo que él consideraba que era el infierno.</li><br>
+		<li>En Mustafar podemos observar un volcán en erupción, el cual es real: se trata del Etna en la costa este de Sicilia.</li><br>
+		<li>En esta película Hayden Christensen usa el traje de Darth Vader. Para que el actor se viese más incómodo en la escena, demostrando disconformismo, a realizar George Lucas propuso añadirle peso extra.</li><br>
+		<li>Los trajes de los actores que interpretaron a los Wookies tenían un sistema de refrigeración que bombeaba agua helada para que los intérpretes no sufrieran calor.</li><br>
+		<li>La escena del parto de Padmé fue realizada con marionetas anatómicas para representar a Luke y a Leia. Es más, quien debía manejarlas era Ewan McGregor que en escena es quien los recibe en el parto.</li><br>
+		<li>Ewan McGregor le solicitó a Lucasfilm un montaje con todas las escenas de Alec Guinness en su versión de Obi Wan para poder estudiar su interpretación y lograr ser realmente la versión más joven del personaje. </li><br>
+		<li>C-3PO generó bastantes problemas en postproducción ya que todas sus escenas tuvieron que ser retocadas porque la pantalla verde se reflejaba en su carcasa dorada. </li><br>
+		<li>Episodio III fue la primera entrega en no estar nominada en la categoría de Mejores Efectos Visuales de los Oscar.</li><br>
+		<li>En este film la frase "tengo un mal presentimiento", la misma que se oye en todas las películas de la saga, es dicha por Obi Wan Kenobi.</li>
+		</ul>
+		</div>
+		</aside>
+		
+		<main width="70%">
+		<a id="ir-arriba" href="episodio3.html"><img src="saber.png" width="30px"></a>
+		<p id="inicio"><br><br>¡Guerra! La República se desmorona bajo los ataques del despiadado Lord Sith, el Conde Dooku. Hay héroes en ambos bandos. El mal está por doquier.<br><br> En una contundente jugada, el diabólico líder droide, el General Grievous, ha irrumpido en la capital de la República y ha secuestrado al Canciller Palpatine, líder del Senado  Galáctico.<br><br> Mientras el ejército droide separatista trata de huir de la capital sitiada con su valioso rehén, dos Caballeros Jedi lideran una misión desesperada para rescatar al Canciller cautivo....<br></p>
+		<h2>Sinopsis</h2>
+		<p id="Sinopsis">Años después del inicio de las Guerra de los Clones, los nobles Caballeros Jedi lideran un gran ejército clon en un combate de toda la galaxia contra los separatistas. Cuando el siniestro Sith devela un plan de mil años de antigüedad para gobernar la galaxia, la República se desmorona y de sus cenizas se eleva el malvado Imperio Galáctico. El heróico Jedi, Anakin Skywalker, es seducido por el lado oscuro de la Fuerza para convertirse en el nuevo aprendiz del Emperador, Darth Vader. Los Jedi son diezmados, mientras Obi-Wan Kenobi y el Maestro Jedi Yoda se ven obligados a esconderse. La única esperanza de la galaxia es la propia descendencia de Anakin: los hijos gemelos nacidos en secreto que crecerán hasta convertirse en héroes.</p>
+		<h2 id="Lugares">Lugares destacados</h2>
 		<table>
 		<tr>
-		<td width="70%"><img src="https://static.wikia.nocookie.net/ptstarwars/images/c/c7/Senate_District_ROTS.png/revision/latest?cb=20200226000718" style="width:500px;" alt="Coruscant"></td>
-		<td>Corrussant</td>
+		<td width="70%"><a href="https://starwars.fandom.com/es/wiki/Coruscant" target="_blank"><img src="https://static.wikia.nocookie.net/ptstarwars/images/c/c7/Senate_District_ROTS.png/revision/latest?cb=20200226000718" style="width:90%;" alt="Coruscant"></a></td>
+		<td>Coruscant</td>
 		</tr>
 		<tr>
-		<td width="70%"><img src="https://static.wikia.nocookie.net/esstarwars/images/a/ae/Pau_City_Sinkhole.png/revision/latest?cb=20200412104018" style="width:500px;" alt="Utapau"></td>
+		<td width="70%"><a href="https://starwars.fandom.com/es/wiki/Utapau" target="_blank"><img src="https://static.wikia.nocookie.net/esstarwars/images/a/ae/Pau_City_Sinkhole.png/revision/latest?cb=20200412104018" style="width:90%;" alt="Utapau"></a></td>
 		<td>Utapau</td>
 		</tr>
 		<tr>
-		<td width="70%"><img src="https://labibliotecadeltemplojedi.files.wordpress.com/2020/09/mustafar-5-facts_tall.jpg?w=1536&h=864&crop=1" style="width:500px;" alt="Mustafar"></td>
+		<td width="70%"><a href="https://starwars.fandom.com/es/wiki/Mustafar" target="_blank"><img src="https://labibliotecadeltemplojedi.files.wordpress.com/2020/09/mustafar-5-facts_tall.jpg?w=1536&h=864&crop=1" style="width:90%;" alt="Mustafar"></a></td>
 		<td>Mustafar</td>
 		</tr>
 		</table>
-		<h2>Fin de la Guerra</h2>
-		<h3>Muerte del General Grievous</h3>
-		<img src="https://media.tenor.com/h8ESfI_EBaQAAAAC/star-wars-general-grievous.gif" style="width:400px;float:right;margin-left:15px;">
+		<h2 id="Guerra">Fin de la Guerra</h2>
+		<h3 id="Grievous">Muerte del General Grievous</h3>
+		<img src="https://media.tenor.com/h8ESfI_EBaQAAAAC/star-wars-general-grievous.gif" style="width:400px;float:right;margin-left:15px;margin-right:15px;">
 		<p>El General Obi-Wan Kenobi había sido enviado por el Consejo Jedi para aniquilar al General Grievous; había recibido noticias del paradero de éste: el sistema Utapau. Tras llegar y enterarse por medio de sus habitantes que el ciborg los había mantenido prisioneros, Kenobi se dirige al lugar donde se encontraba por medio de Boga, el veractyl provisto por los habitantes de Utapau.Tras un intento fallido de lanzar a Kenobi al vacío, quedando colgado al borde de la plataforma, el General se dispuso a matarlo con la electrovara tirada en el suelo, Kenobi usó nuevamente La Fuerza para alcanzar el blaster que también estaba en el vehículo para disparar al corazón expuesto de Grievous justo en el momento decisivo, poniendo así fin a la vida de uno de los generales más poderosos que la Galaxia hubiera visto nunca.</p>
-		<h3>Muerte del Conde Dooku</h3>
-		<img src="https://2.bp.blogspot.com/-DDd571xxZnU/VPyAAxkdzBI/AAAAAAAACmc/vpq5cXs9JoA/s1600/dooku.jpg" style="width:300px;float:left;margin-right:15px;">
+		<h3 id="Dooku">Muerte del Conde Dooku</h3>
+		<img src="https://2.bp.blogspot.com/-DDd571xxZnU/VPyAAxkdzBI/AAAAAAAACmc/vpq5cXs9JoA/s1600/dooku.jpg" style="width:300px;float:left;margin-right:15px;margin-left:15px;">
 		<p>A medida que luchaban, Dooku se burló de Skywalker remarcando que tenía miedo, odio e ira pero no los utilizaba. Eso resultó ser un error, no obstante — Anakin se encontraba en efecto asustado, asustado de perder a Obi-Wan. La burla enfureció a Skywalker, que canalizó su odio hacia Dooku en la lucha, rozando momentáneamente el lado oscuro. <br><br>Negándose a ser intimidado por la victoria de Dooku sobre Kenobi, Skywalker siguió atacando a Dooku golpeando sus defensas. Rápidamente tomó ventaja, y en un momento dado golpeó tan fuerte que la hoja de Dooku rozó su hombro. Con una rápida maniobra, procedió a cortar las dos manos del Conde, vengando doblemente la pérdida de su brazo derecho en su primer encuentro. Dooku estaba ahora a merced del Caballero Jedi. <br><br>Esperando que Sidious interviniera y salvara su vida, tal como él había prometido hacer en caso de derrota, Dooku quedó impactado al ver que Palpatine ordenaba a Skyalker ejecutar un golpe mortal. Fue entonces cuando se dio cuenta del engaño de Sidious — el Maestro Sith nunca había pretendido que Dooku sobreviviera — simplemente lo había usado para crear la Confederación de Sistemas Independientes y hacer posible su plan de dominación de la galaxia. Anakin Skywalker, Dooku podía ver, no era otro que su futuro sustituto. Bajo la orden de Palpatine, Skywalker — a pesar de dudar por un momento — ejecutó a Dooku decapitándolo.</p>
-		<h3>Orden 66</h3>
+		<h3 id="Orden66">Orden 66</h3>
 		
-		<img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2019/08/orden-66.jpg" style="width:400px;float:right;margin-left:15px;">
+		<img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2019/08/orden-66.jpg" style="width:400px;float:right;margin-left:15px;margin-right:15px;">
 		<p>La Orden 66, también conocida como el Protocolo Clon 66, fue una orden de alto secreto que identificaba a todos los Jedi como traidores a la República Galáctica y, en consecuencia, sujetos a ejecución sumaria por parte del Gran Ejército de la República. La orden fue programada en los soldados clon del Gran Ejército a través de chips de control implantados en sus cerebros, haciendo imposible para los clones desobedecer la orden de volverse en contra de sus Generales Jedi. Los científicos kaminoanos que diseñaron a los soldados clon creían que sólo sería usada como protocolo de contingencia contra Jedi renegados. En secreto, la Orden 66 era el modo mediante el cual los Sith pretendían hacer caer a la Orden Jedi.</p><br>
-		<p style="text-align:right;">Execute <i>Order 66</i></p>
-		<h3>Jedis caídos en la orden 66</h3>
+		<p style="text-align:right;">"Execute <i>Order 66</i>"</p>
+		<h3 id="Jedis">Jedis caídos en la orden 66</h3>
 		<table>
 		<tr>
-		<td><img src="https://static.wikia.nocookie.net/ptstarwars/images/a/ad/Mundi_Mygetto.jpg/revision/latest?cb=20121217101824" style="width:200px;" alt="Foto"></td>
+		<td><a href="https://starwars.fandom.com/es/wiki/Ki-Adi-Mundi" target="_blank"><img src="https://static.wikia.nocookie.net/ptstarwars/images/a/ad/Mundi_Mygetto.jpg/revision/latest?cb=20121217101824" style="width:200px;" alt="Foto"></a></td>
 		<td>Ki-Adi-Mundi</td>
-		<td><img src="https://static.wikia.nocookie.net/starwarsanimated/images/b/bc/Aayla_Secura.jpg/revision/latest?cb=20140302165859" style="width:200px;" alt="Foto"></td>
+		<td><a href="https://starwars.fandom.com/es/wiki/Aayla-Secura" target="_blank"><img src="https://static.wikia.nocookie.net/starwarsanimated/images/b/bc/Aayla_Secura.jpg/revision/latest?cb=20140302165859" style="width:200px;" alt="Foto"></a></td>
 		<td>Aayla Secura</td>
 		</tr>
 		<tr>
-		<td><img src="https://static.wikia.nocookie.net/esstarwars/images/b/bf/PloKoonCardTrader.png/revision/latest?cb=20200324133638" style="width:200px;" alt="Foto"></td>
+		<td><a href="https://starwars.fandom.com/es/wiki/Plo-Koon" target="_blank"><img src="https://static.wikia.nocookie.net/esstarwars/images/b/bf/PloKoonCardTrader.png/revision/latest?cb=20200324133638" style="width:200px;" alt="Foto"></a></td>
 		<td>Plo Koon</td>
-		<td><img src="https://lumiere-a.akamaihd.net/v1/images/stass-allie_cbfbe9a1.jpeg?region=0%2C90%2C938%2C701" style="width:200px;" alt="Foto"></td>
+		<td><a href="https://starwars.fandom.com/es/wiki/Stass-Allie" target="_blank"><img src="https://lumiere-a.akamaihd.net/v1/images/stass-allie_cbfbe9a1.jpeg?region=0%2C90%2C938%2C701" style="width:200px;" alt="Foto"></a></td>
 		<td>Stass Allie</td>
 		</tr>
 		<tr>
-		<td><img src="https://static.wikia.nocookie.net/starwars/images/3/34/Depa_Billaba.png/revision/latest?cb=20150106121722&path-prefix=it" style="width:200px;" alt="Foto"></td>
+		<td><a href="https://starwars.fandom.com/es/wiki/Depa-Billaba" target="_blank"><img src="https://static.wikia.nocookie.net/starwars/images/3/34/Depa_Billaba.png/revision/latest?cb=20150106121722&path-prefix=it" style="width:200px;" alt="Foto"></a></td>
 		<td>Depa Billaba</td>
-		<td><img src="https://static.wikia.nocookie.net/starwars/images/3/30/GeneralJaroTapal-JFO.png/revision/latest?cb=20191116142848" style="width:200px;" alt="Foto"></td>
+		<td><a href="https://starwars.fandom.com/es/wiki/Jaro-Tapal" target="_blank"><img src="https://static.wikia.nocookie.net/starwars/images/3/30/GeneralJaroTapal-JFO.png/revision/latest?cb=20191116142848" style="width:200px;" alt="Foto"></a></td>
 		<td>Jaro Tapal</td>
 		</tr>
 		</table>
-		<h3>Caída de la República y alzamiento del Imperio</h3>
-		
+		<h3 id="Republica">Caída de la República y alzamiento del Imperio</h3>
+		<img src="https://i.redd.it/1qr4dusjshy81.png" style="width:350px;float:left;margin-left:15px;margin-right:15px;" alt="Foto">
+		<p>En los últimos días de las Guerras Clon en el 19 ABY, los separatistas sufrirían una serie de derrotas importantes, incluyendo la muerte de Dooku y el General Grievous a manos del Caballero Jedi Anakin Skywalker y el Maestro Jedi Obi-Wan Kenobi, respectivamente. Mientras tanto, el Alto Consejo Jedi, que se volvió cada vez más cauteloso con Palpatine debido a sus poderes de guerra sin precedentes, descubrió su identidad como el enigmático Lord Sith Darth Sidious. El intento de los Jedi de aprehenderlo finalmente fracasó y fomentó la caída de Skywalker al lado oscuro y se volvió a bautizar como el nuevo aprendiz de Sidious, Darth Vader. Vader sería enviado posteriormente para atacar el Templo Jedi.<br> Simultáneamente, Palpatine instituyó la Orden 66 al Gran Ejército de la República, comenzando la parte inicial de la destrucción sistemática de la Orden Jedi, ya que los soldados clones ejecutaron a sus Generales Jedi a través de la galaxia. Con la Orden Jedi diezmada, Palpatine dio la Proclamación del Nuevo Orden a una sesión de emergencia del Senado Galáctico, donde declaró a los Jedi enemigos del estado, mientras transformaba la República Galáctica en el Imperio Galáctico, consigo mismo como Emperador Galáctico. Al mismo tiempo, Vader destruyó el Consejo Separatista y desactivó el ejército de droides, poniendo fin de manera efectiva a las Guerras Clon y consolidando el regreso de la galaxia al gobierno de los Sith.Los siguientes diecinueve años antes del comienzo de la Guerra Civil Galáctica y los cinco años posteriores fueron llamados la Era del Imperio.</p> 
+		<h2 id="Citas">Citas de la película</h2>
+		<div id="Quotes">
+		<p>"Cuanto mayor es el orgullo, mayor es la caida"</p>
+		<p class="Autor">-Conde Dooku</p>
+		<br>
+		<p>"El miedo a la pérdida un camino hacia el lado oscuro es"</p>
+		<p class="Autor">-Yoda</p>
+		<br>
+		<p>"Dime, ¿has oido hablar de la tragedia de Darth Plagueis el Sabio?"</p>
+		<p class="Autor">-Palpatine</p>
+		<br>
+		<p>"Yo soy el Senado"</p>
+		<p class="Autor">-Palpatine</p>
+		<br>
+		<p>"Corrompido por el lado oscuro el joven Skywalker ha sido. El muchacho que adiestraste desaparecido ha. Consumido por Darth Vader."</p>
+		<p class="Autor">-Yoda</p>
+		<br>
+		<p>"¡Tú eras el elegido! ¡El que destruiría a los Sith, no el que se uniría a ellos! ¡El que vendría a traer el equilibrio a la fuerza, no a hundirla en la oscuridad!"</p>
+		<p class="Autor">-Obi Wan Kenobi</p>
+		<br>
+		<br>
+		</div>
 		</main>
+		<footer>
+		<div style="margin-top:14px;">
+		
+		</div>
+		</footer>
 	</body>
 </html>
