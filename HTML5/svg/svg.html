@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Gráficos Vectoriales</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Tere Ávila Rey">
+		<meta name="generator" content="Editor de Texto Linux">
+		<meta name=”viewport” content=”width=device-width,initial-scale 1.0”>
+		<meta name=”keywords” content=”html5 estructura etiquetas atributos”>
+		<meta name=”description” content=”Mi primera plantilla en html5”>
+		<!-- <link rel="stylesheet" href="misestilos.css"> -->
+		<link rel="icon" href="miicono.ico">
+	</head>
+	<body>
+	<h1 style="text-align:center">Gráficos vectoriales svg</h1>
+	
+		<h3>Línea</h3>
+		<svg style="border:1px solid black;" width="400" height="300"> 
+			<line x1="80" y1="50" x2="250" y2="200" stroke-width="10" stroke="black" />
+		</svg>
+		
+		<h3>Muchas líneas tributarias</h3>
+		<svg style="border:1px solid black;" width="400" height="300">
+  <line x1="80" y1="50" x2="250" y2="200" stroke-width="5" stroke="red" />
+  <line x1="80" y1="200" x2="250" y2="60" stroke-width="10" stroke="blue" />
+    <line x1="110" y1="50" x2="330" y2="200" stroke-width="5" stroke="yellow" />
+    <line x1="0" y1="300" x2="300" y2="0" stroke-width="15" stroke="red" />
+		</svg>
+		
+		<h3>Polilínea stonks</h3>
+		<svg style="border:1px solid black;" width="400" height="300">
+		<polyline fill="none" stroke="red" stroke-width="5" 
+points="25 300, 37 160, 50 195, 100 150, 150 180, 250 50, 300 70, 400 0"/>
+		</svg>
+		
+		<h3>Triángulo invertido</h3>
+		<svg style="border:1px solid black;">
+  			<polyline points="100 100, 150 150, 200 100"/>
+		</svg>
+		
+		<h3>Polilínea bancarrota</h3>
+		<svg style="border: 1px solid black;" width="400px" height="300">
+  			<polyline fill="none" stroke="red" stroke-width="5" 
+points="50 50, 150 150, 80 200, 250 300"/>
+		</svg>
+		
+		<h3>Polilíneas colorines</h3>
+		<svg style="border: 1px solid black;" width="400px" height="300">
+		<polyline fill="green" stroke="red" stroke-width="5" 
+points="20 30, 100 150, 30 200"/>
+		<polyline fill="blue" stroke="orange" stroke-width="5" 
+points="100 30, 150 100, 200 30, 300 150"/>
+		<polyline fill="none" stroke="green" stroke-width="5" 
+points="150 150, 250 150, 250 250, 150 250, 150 200, 200 200"/>
+		</svg>
+		
+		<h3>Rectángulos</h3>
+		<svg style="border: 1px solid black;" width="500" height="400" > 
+		<rect x="100" y="50" width="200" height="100" />
+		</svg>
+		<svg style="border: 1px solid black;" width="400" height="200" > 
+		<rect x="100" y="50" width="200" height="100" />
+		</svg>
+		
+		<h3>Rectángulos con borde redondeado</h3>
+		<svg style="border: 1px solid black;"> 
+		<rect x="100" y="50" width="200" height="100"  rx="30" ry="50"  />
+		</svg>
+		<svg style="border: 1px solid black;"> 
+		<rect x="100" y="50" width="200" height="100"  rx="80" ry="40"  />
+		</svg>
+		<h3>Pentágono</h3>
+		<svg style="border: 1px solid black;" width="400px" height="300">
+		<polygon points="175 40, 270 108, 233 216, 117 216, 81 108" />
+		</svg>
+		<h3>Triángulo</h3>
+		<svg style="border: 1px solid black;" width="400px" height="300px">
+		<polygon fill="orange" stroke="black" stroke-width="5px" points="80 230, 180 30, 280 230" />
+		</svg>
+		<h3>Hexágono</h3>
+		<svg style="border: 1px solid black;" width="400px" height="300px">
+		<polygon fill="yellow" stroke="blue" stroke-width="4px" 
+points="100 90, 187 42, 272 90, 272 184, 187 233, 100 184" />
+		</svg>
+		<h3>Estrella</h3>
+		<svg style="border: 1px solid black;" width="400px" height="300px">
+	<polygon fill="orange" stroke="green" stroke-width="4px" 
+points="170 50, 193 127, 275 127, 210 174, 235 249, 168 205, 100 250, 127 174, 60 130, 140 127" />
+		</svg>
+		<h2>Circulos</h2>
+		<h3>Circulo Normie</h3>
+		<svg style="border: 1px solid black;" width="400px" height="400px">
+  <circle cx="120" cy="150" r="80" fill="green" stroke="blue" stroke-width="5px"/>
+</svg>
+		<h3>Circulos Concéntricos</h3>
+	<svg style="border: 1px solid black;" width="337px" height="292px">
+
+	<circle cx="184" cy="150" r="117" fill="#a19e03" stroke="#0e0e8a" stroke-width="0.5px"/>
+	<circle cx="177" cy="150" r="109" fill="#adaa03" stroke="#0e0e8a" stroke-width="1px"/>
+	<circle cx="167" cy="150" r="96" fill="#b5b204" stroke="#0e0e8a"  stroke-width="1.5px"/>
+	<circle cx="159" cy="150" r="83" fill="#bfbc06" stroke="#0e0e8a"  stroke-width="2px"/>
+	<circle cx="150" cy="150" r="70" fill="#c7c406" stroke="#0e0e8a"  stroke-width="2.5px"/>
+	<circle cx="142" cy="150" r="60" fill="#d6d304" stroke="#0e0e8a"  stroke-width="3px"/>
+	<circle cx="131" cy="150" r="45" fill="#e3e005" stroke="#0e0e8a"  stroke-width="3.5px"/>
+	<circle cx="124" cy="150" r="34" fill="#ebe807" stroke="#0e0e8a"  stroke-width="4px"/>
+	<circle cx="116" cy="150" r="21" fill="#f5f207" stroke="#0e0e8a"  stroke-width="4.5px"/>
+	<circle cx="110" cy="150" r="10" fill="#fffc03" stroke="#0e0e8a"  stroke-width="5px"/>
+	</svg>
+	
+	
+	<h3>Gusanito con mi cara al escuchar a hablar a alguien de Vox</h3>
+	<svg style="border: 1px solid black;" width="477px" height="383px">
+
+<circle cx="402" cy="192" r="37" fill="#0f046e" stroke="#0f046e" stroke-width="0.5px"/>
+<circle cx="344" cy="224" r="47" fill="#3727c4" stroke="#0f046e" stroke-width="1px"/>
+<circle cx="274" cy="229" r="47" fill="#5748db" stroke="#0f046e"  stroke-width="1.5px"/>
+<circle cx="205" cy="228" r="47" fill="#7668f2" stroke="#0f046e"  stroke-width="2px"/>
+<circle cx="131" cy="211" r="47" fill="#988dfc" stroke="#0f046e"  stroke-width="2.5px"/>
+<circle cx="94" cy="154" r="63" fill="#bab3ff" stroke="#0f046e"  stroke-width="3px"/>
+
+<circle cx="65" cy="140" r="8" fill="#0f046e" stroke="#0f046e"  stroke-width="3.5px"/>
+<circle cx="108" cy="155" r="8" fill="#0f046e" stroke="#0f046e"  stroke-width="4px"/>
+
+<circle cx="83" cy="176" r="11" fill="#0f046e" stroke="#0f046e"  stroke-width="4px"/>
+
+<circle cx="167" cy="67" r="13" fill="#08004f" stroke="#0f046e"  stroke-width="1px"/>
+<circle cx="39" cy="55" r="13" fill="#08004f" stroke="#0f046e" stroke-width="1px"/>
+
+<circle cx="423" cy="258" r="9" fill="#0f046e" stroke="#0f046e"  stroke-width="2px"/>
+<circle cx="363" cy="295" r="9" fill="#0f046e" stroke="#0f046e"  stroke-width="2px"/>
+<circle cx="321" cy="288" r="9" fill="#0f046e" stroke="#0f046e"  stroke-width="2px"/>
+<circle cx="277" cy="305" r="9" fill="#0f046e" stroke="#0f046e"  stroke-width="2px"/>
+<circle cx="242" cy="291" r="9" fill="#0f046e" stroke="#0f046e"  stroke-width="2px"/>
+<circle cx="194" cy="310" r="9" fill="#0f046e" stroke="#0f046e"  stroke-width="2px"/>
+<circle cx="156" cy="285" r="9" fill="#0f046e" stroke="#0f046e"  stroke-width="2px"/>
+<circle cx="101" cy="287" r="9" fill="#0f046e" stroke="#0f046e"  stroke-width="2px"/>
+<circle cx="75" cy="251" r="9" fill="#0f046e" stroke="#0f046e"  stroke-width="2px"/>
+
+<line x1="69" y1="97"   x2="42" y2="63" stroke-width="3" stroke="#0f046e" />
+<line x1="125" y1="102" x2="156" y2="71" stroke-width="3" stroke="#0f046e" />
+
+
+<line x1="92" y1="237"  x2="82" y2="248" stroke-width="4" stroke="#0f046e" />
+<line x1="117" y1="254" x2="107" y2="281" stroke-width="4" stroke="#0f046e" />
+<line x1="176" y1="261" x2="160" y2="278" stroke-width="4" stroke="#0f046e" />
+<line x1="205" y1="271" x2="199" y2="304" stroke-width="4" stroke="#0f046e" />
+<line x1="261" y1="272" x2="248" y2="285" stroke-width="4" stroke="#0f046e" />
+<line x1="277" y1="274" x2="281" y2="299" stroke-width="4" stroke="#0f046e" />
+<line x1="330" y1="265" x2="324" y2="280" stroke-width="4" stroke="#0f046e" />
+<line x1="361" y1="263" x2="363" y2="286" stroke-width="4" stroke="#0f046e" />
+<line x1="415" y1="223" x2="424" y2="249" stroke-width="4" stroke="#0f046e" />
+
+<circle cx="65" cy="137" r="4" fill="#fff" stroke="#0f046e"  stroke-width="1px"/>
+<circle cx="108" cy="151" r="4" fill="#fff" stroke="#0f046e"  stroke-width="1px"/>
+</svg>
+
+<h3>Elipses</h3>
+<svg style="border: 1px solid black;" width="400px" height="300px">
+  <ellipse cx="150" cy="120" rx="140" ry="80"/>
+</svg>
+	<svg style="border: 1px solid black;" width="400px" height="300px">
+  <ellipse cx="200" cy="120" rx="150" ry="40" fill="orange" stroke="none"/>
+</svg>
+<h3>Diana</h3>
+<svg style="border: 1px solid black;" width="400px" height="400px">
+<circle cx="200" cy="200" r="200" fill="red"/>
+<circle cx="200" cy="200" r="180" fill="#ffffff"/>
+<circle cx="200" cy="200" r="160" fill="red"/>
+<circle cx="200" cy="200" r="140" fill="#ffffff"/>
+<circle cx="200" cy="200" r="120" fill="red"/>
+<circle cx="200" cy="200" r="100" fill="#ffffff"/>
+<circle cx="200" cy="200" r="80" fill="red"/>
+<circle cx="200" cy="200" r="60" fill="#ffffff"/>
+<circle cx="200" cy="200" r="40" fill="red"/>
+<circle cx="200" cy="200" r="20" fill="#ffffff"/>
+</svg>
+
+<h3>Rayo de Harry Potter</h3>
+<svg style="border: 1px solid black;" width="400px" height="400px">
+<polygon points="200 20, 200 180, 260 160, 180 370, 200 220, 150 240" fill="#ffcb1f"/>
+</svg>
+
+<h3>Corason corason</h3>
+
+<svg style="border: 1px solid black;" width="400px" height="400px">
+<circle cx="100" cy="100" r="100" fill="red"/>
+<circle cx="300" cy="100" r="100" fill="red"/>
+<polygon fill="red" stroke-width="5px" points="20 160, 200 400, 380 160, 200 100"/>
+
+</svg>
+<svg style="border: 1px solid black;" width="400px" height="400px">
+<circle cx="100" cy="100" r="100" fill="red">
+	<animate attributeName="r" from="100" to="70" dur="2s" fill="freeze" repeatCount="5"/>
+	<animate attributeName="cx" from="100" to="150" dur="2s" fill="freeze" repeatCount="5"/>
+	<animate attributeName="cy" from="100" to="125" dur="2s" fill="freeze" repeatCount="5"/>
+</circle>
+      
+<circle cx="300" cy="100" r="100" fill="red">
+	<animate attributeName="r" from="100" to="70" dur="2s" fill="freeze" repeatCount="5"/>
+	<animate attributeName="cx" from="300" to="250" dur="2s" fill="freeze" repeatCount="5"/>
+	<animate attributeName="cy" from="100" to="125" dur="2s" fill="freeze" repeatCount="5"/>
+</circle>
+
+<polygon fill="red" stroke-width="5px" points="20 160, 200 400, 380 160, 200 100">
+	<animate attributeName="points" from="20 160, 200 400, 380 160, 200 100" to="89 160, 200 300, 311 160, 200 125" dur="2s" fill="freeze" repeatCount="5"/>
+</polygon>
+
+</svg>
+<h3>Andaluces levantaos</h3>
+<svg style="border: 1px solid black;" width="800px" height="600px">
+<rect x="0" y="0" width="800" height="200" fill="green"/>
+<rect x="0" y="200" width="800" height="200" fill="white"/>
+<rect x="0" y="400" width="800" height="200" fill="green"/>
+<polygon fill="red" 
+points="400 200, 423 277, 505 277, 440 324, 465 399, 398 355, 330 400, 357 324, 290 280, 370 277">
+<animate attributeName="fill" from="white" to="red" dur="4s" fill="freeze" repeatCount="5"/>
+</polygon>
+</svg>
+	</body>
+</html>

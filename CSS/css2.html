@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>CSS2</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Tere Ávila Rey">
+		<meta name="generator" content="Editor de Texto Linux">
+		<meta name=”viewport” content=”width=device-width,initial-scale 1.0”>
+		<meta name=”keywords” content=”html5 estructura etiquetas atributos”>
+		<meta name=”description” content=”Mi primera plantilla en html5”>
+		<!-- <link rel="stylesheet" href="misestilos.css"> -->
+		<link rel="icon" href="miicono.ico">
+		<style>
+		
+		/*PROPIEDADES PARA TEXTO*/
+			p.cursiv {font-family: cursive;}
+			p.geor {font-family: georgia;}
+			p.fant {font-family: fantasy;}
+			p.new {font-family: times new roman;}
+			p.monos {font-family: monospace;}
+			p {font-family: arial, helvetica, roboto, "new times roman", lato;}
+			p.peque {font-size: small;}
+			p.medio {font-size:medium;}
+			p.grande {font-size: large;}
+			p.mas-grande {font-size: x-large;}
+			p.och {font-size: 8px;}
+			p.diz {font-size: 10px;}
+			p.qui {font-size: 15px;}
+			p.vtr {font-size: 23px;}
+			p.cua {font-size: 40px;}
+			p.normal {font-style: normal;}
+			p.italic {font-style: italic;}
+			p.oblique {font-style: oblique;}
+			p.ligero {font-weight: lighter;}
+			p.negrita {font-weight: bold;}
+			p.pesado {font-weight: bolder;}
+			p.cien {font-weight: 100;}
+			p.trecien {font-weight: 500;}
+			p.quicien {font-weight: 900;}
+			p.sietcien {font-weight: 700;}
+			p.novcien {font-weight: 900;}
+			p.small {font-variant: small-caps;}
+			p.red {color:red;}
+			p.blue {color:#0000ff;}
+			p.green {color: rgb(0, 128, 0);}
+			p.yellow {color:yellow;}
+			p.left {text-align: left;font-weight: bold;}
+			p.right {text-align: right;}
+			p.center {text-align: center;font-weight: bold;}
+			p.justify {text-align: justify;}
+			td.top {vertical-align: top;}
+			td.mid {vertical-align: middle;}
+			td.bot {vertical-align: bottom;}
+			span.baseline {vertical-align: baseline;}
+			span.sub {vertical-align: sub;}
+			span.super {vertical-align: super;}
+			span.pix {vertical-align: -30px;}
+			.bloque {
+			height: 200px; 
+			width: 300px;
+			background-color: red;
+			display: inline-table;
+			}
+			.tex {
+				display: table-cell;
+				vertical-align: middle;
+			}
+			p.none {text-decoration: none;}
+			p.inherit {text-decoration: inherit;}
+			p.overline {text-decoration: overline;}
+			p.through {text-decoration: line-through;}
+			p.underline {text-decoration: underline;}
+			p.indent {text-indent: 70px;}
+			h4 {text-shadow: 7px 4px 5px blue;}
+			h5 {
+			  text-shadow: 
+				3px 3px 1px red,
+				5px 5px 2px yellow,
+				8px 8px 3px blue;
+				;
+
+			}
+			p.capi {text-transform: capitalize;}
+			p.upp {text-transform: uppercase;}
+			p.low {text-transform: lowercase;}
+			p.posit {letter-spacing: 4px;}
+			p.neg  {letter-spacing: -2px;}
+			p.posit {word-spacing: 8px;}
+			p.nega {word-spacing: -2px;}
+			
+			p.pre {white-space: pre;}
+			p.nowrap {white-space: nowrap;}
+			p.prewrap {white-space:pre-wrap;}
+			  h1.concss {
+			font-size: 45px;
+			font-family: Roboto;
+			font-weight: bold;
+			font-style: italic;
+			text-transform: uppercase;
+			text-decoration: underline;
+			letter-spacing: 6px;
+			color: #4416c4;
+			background-color: #e3e3e3;
+		}
+		p.concss {
+			font-size: 34px;
+			font-weight: bold;
+			font-style: italic;
+			font-variant: small-caps;
+			font-family: monospace;
+			text-transform: capitalize;
+			letter-spacing: 4px;
+			color: #b80935;
+			text-align:center;
+			word-spacing: 8px
+		}
+		
+		/*PROPIEDADES DE ANCHO Y ALTO*/
+		img.primeraimg {
+			width: 400px;
+			height: 200px;}
+
+		img.segundaimg {
+			width: 250px;
+			height: 380px;}
+			
+		p.modificado {
+			width: 150px;
+			height:100px}
+			
+		img.maxheight {
+			max-height: 200px;}
+
+		img.minwidth {
+		  min-width: 700px;}
+				
+		/*PROPIEDADES DE border, padding Y margin*/
+		
+		.imagenpadding {padding: 50px}
+		
+		.imagenpaddingdif {padding: 40px 20px 65px 80px;}
+		
+		.imagenpaddingtop {
+			padding-bottom: 70px;
+			padding-right: 100px;
+		}
+		
+		p.textborde {border:7px solid blue;}
+		
+		p.textborde3 {
+		border-width: 3px;
+		border-color: blue;
+		border-style: solid;
+		}
+
+		p.textmasborde {
+		border-width: 8px;
+		border-color: blue;
+		border-style: solid;
+		}
+		
+		p.textbordedif {
+  			border-width: 7px 8px 4px 5px;
+  			border-color: blue;
+			border-style: solid;
+		}
+		
+		p.textbordecolor {
+			border-width: 8px;
+			border-style: solid;
+			border-top-color: red;
+			border-right-color: blue;
+			border-bottom-color: yellow;
+			border-left-color: green;
+		}
+		
+		p.textbordemascolor { 
+			border-width: 8px;
+			border-style: solid;
+			border-color:red blue yellow green;
+		}
+		
+		p.textdottedborde {
+			border-width: 8px;
+			border-color: blue;
+			border-style: dotted;
+		}
+		
+		p.textborderaro { 
+			border-width: 8px;
+			border-color: blue;
+			border-top-style: solid; 
+			border-right-style: dotted; 
+			border-bottom-style: double;
+			border-left-style: dashed; 
+		}
+		
+		p.textbordecompleto {
+			border-color: blue;
+			border-width: 5px;
+			border-style: dotted;
+			padding:13px
+		}
+		
+		p.textbordevariado {
+			padding: 20px;
+			border-width: 2px 4px 8px 16px;
+			border-color: red blue yellow black;
+			border-style: solid double dotted dashed; 
+		}
+		
+		div.contenedormargin {
+			background-color: blue;
+			border: 1px solid green;
+			max-width: 500px;
+		}
+
+		p.marginnegativo {
+			background-color: red;
+			margin: -15px;
+		}
+
+		p.margincero {
+			background-color: red;
+			margin: 0px;}
+
+		p.margintrenta {
+			background-color: red;
+			margin: 30px;}
+
+		p.marginsenta {
+			background-color: red;
+			margin: 60px;}
+			
+		img.marginimagen {
+			margin: 7px 8px 9px 14px;}
+		
+		div.contenedormargin2 {
+			background-color: blue;
+			border: 1px solid green;
+			max-width: 500px;
+		}
+
+		p.marginvariado {
+			background-color: red;
+			margin-top: 40px;
+			margin-right:60px;
+			margin-bottom:0px;
+		}
+		
+		p.marginvert {margin; 20px 30px;}
+		
+		p.margintop {margin: 10px 15px 14px;}
+		
+		/*PROPIEDADES DE FONDO*/
+		
+		div.bgcontenedor {
+			background-color:#abbcff;
+			padding:40px;
+		}
+
+		p.bgmorado {
+			background-color: purple;
+			padding: 10px;
+		}
+
+		p.bgverde {
+			background-color: #009846;
+			padding: 10px;
+		}
+
+		p.bgnaranja {
+			background-color: rgb(239, 127, 26);
+			padding: 10px;
+		}
+		
+		div.fondoimg {
+			max-width: 500px;
+			min-height: 350px;
+			background-image: url("clown.jpg");}
+
+		p.fondotext {background-color: #fff345;}
+		
+		div.fondopadre {
+			background-image: url("clown.jpg");
+			background-repeat: repeat-x;
+			width:600px;
+			height:400px;
+		}
+
+		div.fondohijo {
+			background-image: url("estrellas.png");
+			background-repeat: inherit;
+			border: 5px solid yellow;
+			width:400px;
+			height: 180px;
+		}
+		
+		div.fondomovil {  
+			background-image: url("clown.jpg");
+			background-repeat: no-repeat;
+			background-attachment: scroll;
+			width:200px;
+			height:200px;
+		}
+
+		div.fondofijo {  
+			background-image: url("clown.jpg");
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			width:200px;
+			height:220px;
+		}
+		
+		/*PROPIEDADES DE LISTAS*/
+		
+		ul.listacirculo {list-style-type: circle;}
+
+		ul.listacuadrado {list-style-type: square;}
+		
+		ol.listalatin {list-style-type: lower-latin;}
+
+		ol.listaroman {list-style-type: upper-roman;}
+		
+		ul.listaconimagen {
+			list-style-image:url("clown.jpg");
+			list-style-position:inside;
+		}
+		
+		ul.listadentro {list-style-position:inside;}
+
+		ul.listafuera {list-style-position:outside;}
+		
+		ul.listaseparado {
+			list-style-type: none;
+			list-style-position: inside;
+			list-style-image:url("clown.jpg");}
+
+		ul.listajunto {
+			list-style: none inside url("clown.jpg");
+			}
+			
+		/*PROPIEDADES DE TABLAS*/
+		
+		table.tablaseparado {border-collapse: separate;}
+
+		table.tablacolapsado {border-collapse: collapse;}
+		
+		table.tablasinespacio {border-collapse: separate;}
+		
+		table.tablaconespacio {
+			border-collapse: separate;
+			border-spacing: 30px;}
+			
+		table.tabladiferent {
+			border-collapse: separate;
+			border-spacing: 70px 15px;}
+			
+		caption {caption-side:bottom;}
+		
+		table.emptyhide {
+			border-collapse:separate;
+			empty-cells: hide;
+		}
+
+		table.emptyshow {
+			border-collapse:separate;
+			empty-cells: show;
+		}
+		
+		table.layoutauto {
+			table-layout: auto;
+			width: 10px;
+		}
+		
+		table.layoutfixed {
+			table-layout: fixed;
+			width: 100px;
+		}
+		
+		table.layoutmas {
+			table-layout: fixed;
+			width: 300px;
+		}
+		
+		table#mitabla {border-collapse: collapse;}
+		td.bajo {background-color: #ff455e;}
+		td.medio {background-color: #d63e3e;}
+		td.alto {background-color: #940014;}
+
+		td.a {background-color: #243ff0;}
+		td.b {background-color: #1726cf;}
+		td.c {background-color: #100085;}
+
+		td.aaa {background-color: #f8ff94;}
+		td.bbb {background-color: #fff64f;}
+		td.ccc {background-color: #ffff00;}
+
+		thead.cabecera tr td {
+			font-family: monospace;
+			font-size: 30px;
+			font-weight: bold;
+			color: #ffffff;
+			padding: 15px;}
+
+		tfoot.pie tr td {
+			font-size: 18px;
+			font-weight: bold;
+			font-family: Georgia;
+			padding: 2px;}
+
+		tbody.cuerpo tr td {
+			color: #ebebeb;
+			padding: 10px;}
+
+		td#mitabla {
+			border-style: solid;
+			border-color: #cccccc;
+		 	border-width: 1px;}
+		 	
+		 /*PROPIEDADES DE TABLAS*/
+		 
+		a:hover.enlacesobre{
+			color:#fff;
+			background-color: blue;
+			padding: 10px;
+			margin: 50px;
+			border: 3px solid green;
+			font-family:impact;
+		}
+		
+		a:visited {color: green;}
+		a:active {color: red}
+		
+		a.enlacesin {text-decoration: none;}
+
+		a.enlaceotro {
+			  background-color:green;
+			  color:#fff;
+			  padding: 8px;
+			  text-decoration:none;
+		}
+		
+		/*PROPIEDADES DE CURSOR*/
+		
+		p.cursorpointer {
+			cursor:pointer;
+			background-color: #9e0b0b; 
+		}
+
+
+		div.cursorarrastre {
+			cursor: move;
+			width: 200px;
+			height: 200px;
+			background-color: #160654;
+		}
+
+		div.cursordefault {
+			width: 300px;
+			height: 40px;
+			background-color:#422aa1;
+			cursor:default;
+		}
+		div.cursorno-drop {
+			width: 300px;
+			height: 40px;
+			background-color:#422aa1;
+			cursor:no-drop;
+		}
+		div.cursorcol-resize {
+			width: 300px;
+			height: 40px;
+			background-color:#422aa1;
+			cursor:col-resize;
+		}
+		div.cursorew-resize {
+			width: 300px;
+			height: 40px;
+			background-color:#422aa1;
+			cursor:ew-resize;
+		}
+		div.cursorwait {
+			width: 300px;
+			height: 40px;
+			background-color:#422aa1;
+			cursor:wait;
+		}
+		
+		/*PROPIEDADES DE display y visibility*/
+		
+		.tobloque {
+			display: block;
+		}
+		
+		.toinline {
+			display: inline;
+		}
+		
+		.tonone {
+			display: none;
+		}
+		
+		/*PROPIEDADES DE POSICIONAMIENTO*/
+		
+		/*PARA LA POSICIÓN ORIGINAL*/
+		.divamarillo{
+			width:500px;
+			  height:500px;
+		}
+		
+		.posamarillo {
+			  position: relative;
+			  background-color:yellow;
+			  width:80px;
+			  height:80px;
+		}
+
+		/*PARA LA POSICIÓN 2*/
+		.posamarillo2 {
+			  position: relative;
+			  top:50px;
+			  left:30px;
+			  background-color:yellow;
+			   width:80px;
+			  height:80px;
+		}
+
+/*PARA LA POSICIÓN 3*/
+		.posamarillo3 {
+			  position: relative;
+			  top:80px;
+			  left: 60px;
+			  background-color:yellow;
+			   width:80px;
+			  height:80px;
+		}
+		
+		/*RELATIVO*/
+		
+		div.rela {
+		  width: 80px;
+		  height: 40px;
+		  background-color: #2a88f5;
+		}
+
+		div.divdos {
+		  width: 80px;
+		  height: 40px;
+		  position: relative;
+		  left: 80px;
+		  background-color: #2a88f5;
+		}
+
+		div.divcuatro {
+		  width: 80px;
+		  height: 40px;
+		  position: relative;
+		  top: 80px;
+		  left: 80px;
+		  background-color: #2a88f5;
+		}
+		
+		/*ABSOLUTO*/
+		/*PARA LA POSICIÓN ORIGINAL*/
+		div.absoverde {
+		  position:relative;
+		  width: 400px;
+		  height: 400px;
+		  background-color:green ;
+		}
+		/*PARA AMARILLO POSICIÓN 2*/
+		div.absoazul {
+		  width: 200px;
+		  height: 200px;
+		  background-color: #2a88f5;
+		  position:absolute;
+		  top:0px;
+		  left:0px;
+		}
+		/*PARA AMARILLO POSICIÓN 3*/
+		div.absoamarillo {
+		  width: 100px;
+		  height: 100px;
+		  background-color: yellow;
+		  position: absolute;
+		  bottom: 0px;
+		  right: 0px;
+		}
+		
+		/*ABSOLUTO 2*/
+		
+		div.absopadre {
+			position:relative;
+			width: 300px;
+			height: 200px;
+			background-color: #c2edcd;
+			}
+
+		div.abso {
+			  width: 70px;
+			  height: 35px;
+			  background-color: #2a88f5;
+			  }
+
+		div.absohijo2 {
+			  position: absolute;
+			  top: 0px;
+			  left: 150px;
+			  width: 70px;
+			  height: 35px;
+			  background-color: #2a88f5;
+			  }
+
+		div.absohijo4 {
+			  position: absolute;
+			  bottom: 70px;
+			  right: 100px;
+			  width: 70px;
+			  height: 35px;
+			  background-color: #2a88f5;
+			  }
+			  
+		/*FIJO*/
+		div.fijo1 {
+			  width: 90px;
+			  height: 100px;
+			  background-color: purple;
+			  position: fixed;
+			  top: 30px;
+			  left: 150px;
+		}
+
+		div.fijo2 {
+		  width: 90px;
+	  	  height: 100px;
+		  background-color: purple;
+		  position: fixed;
+		  right: 100px;
+		  bottom: 80px;
+		}
+		
+		/*FLOAT*/
+
+		div.floatleft {
+			height: 50px;
+			background-color: #18abdb;
+			float: left;
+			padding: 7px;
+			}
+		div.floatright {
+			height: 50px;
+			background-color: #18abdb;
+			float: right;
+			padding:7px;
+			}
+		
+		/*CLEAR*/
+		
+		div.clearprimero {
+			margin:15px;		
+			width: 200px;
+			height:200px;
+			background-color: red;
+			float: right;
+		}
+
+		div.clearsegundo {
+			margin:15px;
+			width: 400px;
+			height: 150px;
+			background-color: blue;
+			clear: right;
+		}
+		/*OVERFLOW*/
+		
+		div.overflow {
+			width:200px;
+			 height: 200px;
+			margin:40px;
+			padding: 15px;
+			background-color:#76e37f;
+			border: 1px solid #aaa;
+			overflow:scroll;
+		}
+
+		/*Z-INDEX*/
+		div.zindex{
+		width: 500px;
+		height: 500px;
+		position: relative;
+		}
+		div.zprimero {
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			background-color: red;
+			top: 50px;
+			left: 30px;
+			z-index:10;
+		}
+		div.zsegundo {
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			background-color: blue;
+			top: 100px;
+			left: 80px;
+			z-index:5;
+		}
+		div.ztercero {
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			background-color: yellow;
+			top: 150px;
+			left: 130px;
+			z-index:1;
+		}
+		</style>
+	</head>
+	<body>
+		<h1 style="text-align:center"><u>CSS</u></h1>
+		<h2 style="text-align:center"><u>CSS PARA TEXTO</u></h2>
+		<h3><u>Familias tipográficas</u></h3>
+			<p class="cursiv"> Este es un párrafo con tipo de letra cursive</p>
+			<p class="geor"> Este es un párrafo con tipo de letra georgia</p>
+			<p class="fant"> Este es un párrafo con tipo de letra fantasy</p>
+			<p class="new"> Este es un párrafo con tipo de letra times new roman</p>
+			<p class="monos"> Este es un párrafo con tipo de letra monospace</p>	
+			<p> Párrafo con respaldos de tipografia, en caso no pueda cargar el preferido</p>
+		
+		<h3><u>Tamaño de fuente</u></h3>
+			<p class="peque">Texto con tamaño de letra pequeño</p>
+			<p class="medio"> Texto con tamaño de letra mediano </p>
+			<p class="grande"> Texto con tamaño de letra grande </p>
+			<p class="mas-grande"> Texto con tamaño de letra muy grande </p>
+			<p class="och">Texto tamaño de letra 8</p>
+			<p class="diz">Texto tamaño de letra 10</p>
+			<p class="qui">Texto tamaño de letra 15</p>
+			<p class="vtr">Texto tamaño de letra 23</p>
+			<p class="cua">Texto tamaño de letra 40</p>
+
+		<h3><u>Estilo de fuente</u></h3>
+			<p class="normal">Este es un texto con es estilo de fuente normal</p>
+			<p class="italic"> Texto con estilo de fuente cursiva</p>
+			<p class="oblique"> Texto con estilo oblicuo, similar a italic </p>
+			<i> Texto con etiqueta i produce lo mismo que italic </i>
+			<p class="ligero">Texto con peso lighter</p>
+			<p class="negrita">Texto con peso bold</p>
+			<p class="pesado">Texto con peso en bolder</p>
+			<p class="cien"> testo con peso 100</p>
+			<p class="trecien"> testo con peso 300</p>
+			<p class="quicien"> testo con peso 500</p>
+			<p class="sietcien"> testo con peso 700</p>
+			<p class="novcien"> testo con peso 900</p>
+
+		<h3><u>Variantes de texto</u></h3>	
+			<p class="normal"> Texto con variante normal </p>
+			<p class="small"> Texto con variante small caps</p>
+			
+		<h3><u>Color de texto</u></h3>
+			<p class="red"> Texto de color rojo </p>
+			<p class="blue"> Texto de color azul </p>
+			<p class="green"> Texto de color verde </p>
+			<p class="yellow"<li>Pepel </li>
+			<li>Roca </li>
+			<li>Tijera </li>
+			<p class="yellow"> Texto de color amarillo </p>
+		
+		<h3><u>Alineación de texto</u></h3>
+		<p class="left"> Este es un parrafor alineado a la izquierda, mediante la propiedad y text-align de CSS. </p>
+		<p class="right"> Este párrafo será alineado a la derecha y lo verás claramente por que es muy diferente al anterior. </p>
+		<p class="center"> Texto alineado al centro con CSS </p>
+		<p class="justify"> Este hermoso texto será justificado con CSS, de tal manera que todas las lineas de este párrafo se encuentre con margenes iguales. En ocasiones es necesario o quizá para darle un toque estético cautivador, un estilo que necesita varias lineas de texto para poder ser aprecidado en toda su plenitud; ahora que tenemos varias lienas de floro, puedes deleitar tus ojos con este justificado de texto. </p>
+		
+		<h3><u>Alineación vertical de texto</u></h3>
+		<table border="1" cellpadding="2" cellspacing="0" style="height:200px;">
+			<tr>
+				 <td class="top">texto arriba</td>
+				 <td class="mid">texto al medio</td>
+				 <td class="bot">texto abajo</td>
+			</tr>
+		</table>
+		<h3><u>Alineación con span</u></h3>
+		<p>1 Elemento <span class="baseline">en baseline</span> ejemplo</p>
+		<p>2 Elemento <span class="sub">en sub</span> ejemplo.</p>
+		<p>3 Elemento <span class="super">en super</span> ejemplo.</p>
+		<p>4 Elemento <span class="pix">con número -30px </span> ejemplo..</p>
+		
+		<h3><u>Alineación con div</u></h3>
+		<div class="bloque">
+   <div class="tex">
+este es un texto dentro de un contenedor div con nombre main y será alineado al medio verticamente   </div>
+</div>
+		<h3><u>Decoración de texto</u></h3>
+		
+		<p class="none">Este es un texto sin decoración.</p>
+		<p class="inherit">Texto con decoración heredado.</p>
+		<p class="overline">Texto con decoracion encima.</p>
+		<p class="through">Texto con decoración al medio.</p>
+		<p class="underline">Texto con decoración debajo.</p>
+
+		<h3><u>Indentado de texto</u></h3>
+		<p class="indent"> Este es un texto en el que aplicaremos la propiedad text-indent que sirve para aplicar un espacio al principio de la primera linea de este párrafo. Notaras que la primera linea de este texto se encuentra a una distancia de 70px desde el borde y ello se debe a que el valor de esta propiedad es de 70px.</p>
+
+		<h3><u>Sombra de texto</u></h3>
+		<h4> Título de cuarto nivel</h4>
+		<h5> Título con tres sombras de colores </h5>
+		
+		<h3><u>Transformación de texto</u></h3>
+		<p class="capi"> texto con transformación capitalize en CSS</p>
+		<p class="upp"> texto con transformación uppercase en CSS</p>
+		<p class="low"> texto con transformación lowercase en CSS</p>
+		
+		<h3><u>Interespaciado de texto</u></h3>
+		<p class="posit"> Texto con espaciado de 4px positivo </p>
+		<p class="neg"> Texto con espaciado de -2px negativo</p>
+		
+		<h3><u>Espaciado de texto</u></h3>
+		<p class="posit"> texto con espaciado de palbras en 8px positivo </p>
+		<p class="nega"> texto con espaciado de palabras negativo con -2px </p>
+		
+		<h3><u>Espacio en blanco de texto</u></h3>
+		<p class="pre"> ESTILO PRE      Ejemplo de párrafo posee espacios como este        y otro      además  otro          para que veas la diferencia <br> y sabes, a este párrafo le colocaremos un estilo de espacios PRE con CSS y veamos que sucede en los resultados.</p><hr>
+
+		<p class="nowrap"> ESTILO NOWRAP     Ejemplo de párrafo posee espacios como este        y otro      además  otro          para que veas la diferencia <br> y sabes, a este párrafo le colocaremos un estilo de espacios NOWRAP con CSS y veamos que sucede en los resultados.</p><hr>
+  
+		<p class="prewrap"> ESTILO PRE-WRAP     Ejemplo de párrafo posee espacios como este        y otro      además  otro          para que veas la diferencia <br> y sabes, a este párrafo le colocaremos un estilo de espacios PRE-WRAP con CSS y veamos que sucede en los resultados.</p>
+
+
+		<h3><u>Títulos con CSS</u></h3>
+		
+		<h1 class="concss">Título de ejemplo con CSS</h1>
+		<h1 class="sincss">Título de ejemplo sin CSS</h1>
+		
+		<h3><u>Textos con CSS</u></h3>
+		<p class="concss">Texto de ejemplo final para demostracion con CSS</p>
+		<p class="sincss">Texto de ejemplo final para demostracion sin CSS</p>
+		
+		<h2 style="text-align:center"><u>ANCHO Y ALTO</u></h2>
+		
+		<img class="primeraimg" src="clown.jpg"/>
+		<img class="segundaimg" src="clown.jpg"/>
+		<p style="background-color:green;"> Párrafo para probar la propiedad de ancho y alto de CSS, sin modificación.</p>
+<p class="modificado" style="background-color:green;"> Párrafo para probar la propiedad de ancho y alto de CSS, con modificación (150x100px).</p>
+		<img class="maxheight" src="clown.jpg"/>
+		<img class="minwidth" src="clown.jpg"/>
+		
+		<h2 style="text-align:center"><u>BORDER, PADDING Y MARGIN</u></h2>
+		
+		<h3><u>padding</u></h3>
+		
+		<img class="imagenpadding" src="clown.jpg" alt="foto de payaso" height="150px" width="250px" border="1px"/>
+		
+		<img class="imagenpaddingdif" src="clown.jpg" border="2px" height="250px" width="400px"/>
+		
+		<img class="imagenpaddingtop" src="clown.jpg" alt="foto de gatito" height="250px" width="400px" border="1px"/>
+		 
+		<h3><u>border</u></h3>
+		 
+		<p class="textborde"> Forma simple de poner borde en CSS </p>
+		<p class="textborde3"> Elemeto de texto con borde de 3px de ancho </p>
+		<p class="textmasborde"> Elemento con texto de 8px de ancho.</p>
+		<p class="textbordedif"> Elemeto de texto con borde de 3px de ancho </p>
+		<p class="textbordecolor"> Elemento de texto con borde de 3px de ancho </p>
+		<p class="textbordemascolor"> Elemeto de texto con borde de 3px de ancho </p>
+		<p class="textdottedborde"> Elemento con texto de 8px de ancho.</p>
+		<p class="textborderaro"> Elemeto de texto con borde de 3px de ancho </p>
+		<p class="textbordecompleto"> Elemento de texto con borde de 5px de ancho, color azul y estilo punteado en CSS. </p>
+		<p class="textbordevariado"> Este es un párrafo con borde variado en color, estilo y dimensión.</p>
+		
+		<h3><u>margin</u></h3>
+		
+		<div class="contenedormargin">
+			<p class="marginnegativo"> Párrafo con -15px márgenes uniformes.</p>
+		</div><br>
+
+		<div class="contenedormargin" >
+			<p class="margincero"> Párrafo con márgenes 0px uniformes.</p>
+		</div><br>
+
+		<div class="contenedormargin" >
+			<p class="margintrenta"> Párrafo con márgenes 30px uniformes.</p>
+		</div><br>
+
+		<div class="contenedormargin" >
+			<p class="marginsenta"> Párrafo con márgenes 60px uniformes.</p>
+		</div>
+		
+		<img class="marginimagen" src="clown.jpg" width="340">
+		
+		<div class="contenedormargin2">
+			<p class="marginvariado"> Párrafo con margen  40px superior, 60px derecha y 0px abajo.</p>
+		</div>
+		
+		<p class="marginvert"> Este es un elemento de texto </p>
+		
+		<p class="margintop"> Este es un elemento de texto </p>
+	
+		<h2 style="text-align:center"><u>BACKGROUND</u></h2>
+		
+		<h3><u>background-color</u></h3>
+		
+		<div class="bgcontenedor">
+		<p class="bgmorado"> Este es un párrafo con color de fondo morado (palabra clave)</p>
+
+		<p class="bgverde"> Este es un párrafo con color de fondo verde (hexadecimal)</p>
+
+		<p class="bgnaranja"> Este es un párrafo con color de fondo naranja (RGB)</p>
+</div>
+		
+		<div class="fondoimg"> <p class="fondotext">Párrafo dentro de un bloque con fondo de imagen.</p> </div>
+		<br>
+		<div class="fondopadre">
+		<div class="fondohijo"> BOLQUE HIJO </div>
+		</div>
+		
+		<div class="fondomovil"> <p>Párrafo dentro de un bloque con imagen de fondo movil.</div>
+
+		<div class="fondofijo">Párrafo dentro de un bloque con imagende fondo fijo.</div>
+		
+		<h2 style="text-align:center"><u>LISTAS</u></h2>
+		
+		<ul class="listacirculo">
+			<li>Gato </li>
+			<li>Ratón </li>
+			<li>Conejo </li>
+		</ul>
+
+		<ul class="listacuadrado">
+			<li>Pepel </li>
+			<li>Roca </li>
+			<li>Tijera </li>
+		</ul>
+		
+		<ol class="listalatin">
+			<li>Observe </li>
+			<li>Analice</li>
+			<li>Resuelva</li>
+		</ol>
+
+		<ol class="listaroman">
+			<li>Desayuno </li>
+			<li>Almuerzo </li>
+			<li>Cena</li>
+		</ol>
+		
+		<ul class="listaconimagen">
+			<li>HTML </li>
+			<li>CSS</li>
+			<li>Javascript</li>
+		</ul>
+		
+		<p>Párrafo con flujo normal</p>
+		<ul class="listadentro">
+			<li>Negro</li>
+			<li>Azul</li>
+			<li>Verde</li>
+		</ul>
+		<p>Párrafo con flujo normal</p>
+		<ul class="listafuera">
+			<li>Negro</li>
+			<li>Azul</li>
+			<li>Verde</li>
+		</ul>
+		
+		<p> Propiedades CSS separados </p>
+		<ul class="listaseparado">
+			<li>Lápiz</li>
+			<li>Plumón</li>
+			<li>Goma</li>
+			<li>Cartulina</li>
+		</ul>
+		<hr>
+		<p> Propiedades CSS juntas </p>
+		<ul class="listajunto">
+			<li>Lápiz</li>
+			<li>Plumón</li>
+			<li>Goma</li>
+			<li>Cartulina</li>
+		</ul>
+		
+		<h2 style="text-align:center"><u>TABLAS</u></h2>
+		
+		<table class="tablaseparado" border="1">
+			<tr>
+				<td>HTML</td>
+				<td>CSS</td>
+				<td> JAVASCRIPT</td>
+			</tr>
+
+			<tr>
+				<td>Estructura</td>
+				<td>Apariencia</td>
+				<td>Interactivo</td>
+			</tr>
+
+			</table>
+			<br><br>
+			<table class="tablacolapsado" border="1">
+
+			<tr>
+				<td>HTML</td>
+				<td>CSS</td>
+				<td> JAVASCRIPT</td>
+			</tr>
+
+			<tr>
+				<td>Estructura</td>
+				<td>Apariencia</td>
+				<td>Interactivo</td>
+			</tr>
+		</table>
+		
+		<p>Tabla con celdas sin espacio.</p>
+		<table class="tablasinespacio" border="1">
+			<tr>
+				<td>Marca</td>
+				<td>Color</td>
+				<td>Precio</td>
+			</tr>
+			<tr>
+				<td>Agua</td>
+				<td>Verde</td>
+				<td>140.00</td>
+			</tr>
+		</table>
+
+		<p>Tabla con celdas de espacio uniforme.</p>
+		<table class="tablaconespacio" border="1">
+			<tr>
+				<td>Marca</td>
+				<td>Color</td>
+				<td>Precio</td>
+			</tr>
+			<tr>
+				<td>Agua</td>
+				<td>Verde</td>
+				<td>140.00</td>
+			</tr>
+		</table>
+
+		<p>Tablas con espacio horizontal y vertical diferente.</p>
+		<table class="tabladiferent" border="1">
+			<tr>
+				<td>Marca</td>
+				<td>Color</td>
+				<td>Precio</td>
+			</tr>
+			<tr>
+				<td>Agua</td>
+				<td>Verde</td>
+				<td>140.00</td>
+			</tr>
+		</table>
+		<br>
+		<table border="1">
+			<caption> Colores en forma Hexadecimal. </caption>
+			<tr>
+				<td>Color</td>
+				<td>Verde</td>
+				<td>Azul</td>
+				<td>Rojo</td>
+				<td>Blanco</td>
+			</tr>
+
+			<tr>
+				<td>Hexadecimal</td>
+				<td>#009846</td>
+				<td>#0000ff</td>
+				<td>#ff0000</td>
+				<td>#ffffff</td>
+			</tr>
+		</table>
+		<table class="emptyhide" border="1">
+			<tr>
+				<td>Color</td>
+				<td></td>
+				<td>Azul</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>#009846</td>
+				<td></td>
+			</tr>
+		</table><br>
+
+		<table class="emptyshow" border="1">
+			<tr>
+				<td>Color</td>
+				<td></td>
+				<td>Azul</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>#009846</td>
+				<td></td>
+			</tr>
+		</table>
+		<table class="layoutauto" border="1">
+		<tr>
+		  <td>Color</td>
+		  <td>Verde</td>
+		</tr>
+		<tr>
+		  <td>Hexadecimal</td>
+		  <td>#009846</td>
+		</tr>
+		</table><br>
+
+		<table class="layoutfixed" border="1">
+		<tr>
+		  <td>Color</td>
+		  <td>Verde</td>
+		</tr>
+		<tr>
+		  <td>Hexadecimal</td>
+		  <td>#009846</td>
+		</tr>
+		</table><br>
+		<table class="layoutmas" border="1">
+		<tr>
+		  <td>Color</td>
+		  <td>Verde</td>
+		</tr>
+		<tr>
+		  <td>Hexadecimal</td>
+		  <td>#009846</td>
+		</tr>
+		</table>
+		<table id="mitabla">
+
+		<thead class="cabecera">
+			<tr class="rojo">
+				<td class="bajo"> elemento a </td>
+				<td class="medio"> elemento b </td>
+				<td class="alto"> elemento c </td>
+			</tr>
+		</thead>
+
+		<tbody class="cuerpo">
+			<tr>
+				<td class="a"> elemento A </td>
+				<td class="b"> elemento B </td>
+				<td class="c"> elemento C </td>
+			</tr>
+
+			<tr>
+				<td class="a"> elemento AA </td>
+				<td class="b"> elemento BB </td>
+				<td class="c"> elemento CC </td>
+			</tr>
+
+			</tbody>
+			<tfoot class="pie">
+			<tr>
+				<td class="aaa"> elemento AAA </td>
+				<td class="bbb"> elemento BBB </td>
+				<td class="ccc"> elemento CCC </td>
+			</tr>
+		</tfoot>
+		</table>
+		
+		<h2 style="text-align:center"><u>ENLACES</u></h2>
+		
+		<p><a class="enlacesobre" href="URL">Este es un enlace</a></p>
+		<p><a class="enlacesin" href="URL">Este es un enlace</a></p>
+		<p><a class="enlaceotro" href="URL">Este es un enlace</a></p>
+		
+		<h2 style="text-align:center"><u>CURSOR</u></h2>
+		
+		<p class="cursorpointer"> Cuando el puntero pase sobre este párrafo, tomará la forma de una una manito con el indice señalando hacia arriba. Es el resultado del valor POINTER para la propiedad cursor</p>
+		<div class="cursorarrastre"> Este es un contenedor con fondo azul oscuro y cuando el puntero del ratón pase por encima, tomará la forma de una cruz con flechas; es el puntero resultado del valor MOVE para la propiedad cursor.</div>
+		<br>
+		<div class="cursordefault"> </div> 
+		<br>
+	<div class="cursorno-drop"> </div><br>
+	<div class="cursorcol-resize"> </div><br>
+	<div class="cursorew-resize"> </div><br>
+	<div class="cursorwait"> </div>
+		
+		<h2 style="text-align:center"><u>DISPLAY Y VISIBILITY</u></h2>
+		
+		<span class="tobloque"> Este es un texto span </span>
+		<a  class="tobloque" href="URL"> Este es un enlace</a>
+		<img  class="tobloque" src="clown.jpg">
+		<h1 class="toinline"> TÍTULO </h1>
+		<h2 class="toinline"> Subtítulo</h2>
+		<p class="toinline"> Párrafo corto</p>
+		<ul class="toinline"><li>Primero</li><li>Segundo</li></ul>
+		
+		<p class="tonone"> Este es un párrafo al cual se le aplicará la propiedad display con valor none para que quede oculto en la página web.</p>
+		
+		<h2 style="text-align:center"><u>POSICIONAMIENTO</u></h2>
+		<h3><u>Posicionamiento relative</u></h3>
+		<div class="divamarillo">
+			<div class="posamarillo">Bloque amarillo </div>
+			<div class="posamarillo2">Bloque amarillo 2</div>
+			<div class="posamarillo3">Bloque amarillo 3</div>
+		</div>
+		
+		<div class="rela"> Elemento 1 </div>
+		<div class="divdos"> Elemento 2 </div>
+		<div class="rela"> Elemento 3 </div>
+		<div class="divcuatro"> Elemento 4 </div>
+		<div class="rela"> Elemento 5 </div>
+		<br>
+		<br>
+		<h3><u>Posicionamiento absoluto</u></h3>
+		<div class="absoverde">
+			  <div class="absoazul">
+					<div class="absoamarillo"></div> 
+			  </div>
+		</div>
+		<br><br>
+		<div class="absopadre">
+			<div class="abso"> HIJO 1 </div>
+			<div class="absohijo2"> HIJO 2 </div>
+			<div class="abso"> HIJO 3 </div>
+			<div class="absohijo4"> HIJO 4 </div>
+			<div class="abso"> HIJO 5 </div>
+			</div>
+			<div class="fijo1"> FIJO 1 </div>
+			<div class="fijo2"> FIJO 2</div>
+			<h3><u>Float</u></h3>
+			<div>
+				<div class="floatleft"> BLOQUE1</div>
+				<div class="floatleft"> BLOQUE2 </div>
+				<div class="floatleft"> BLOQUE3 </div>
+				<div class="floatleft"> BLOQUE4 </div>
+			</div><br>
+
+			<div>
+				<div class="floatright"> BLOQUE5</div>
+				<div class="floatright"> BLOQUE6</div>
+				<div class="floatright"> BLOQUE7</div>
+				<div class="floatright"> BLOQUE8</div>
+			</div>
+			<br><br><br><br>
+			<h3><u>Clear</u></h3>
+<div class="clearprimero">PRIMERO</div>
+<div class="clearsegundo">SEGUNDO</div>
+
+<h2 style="text-align:center"><u>OVERFLOW</u></h2>
+
+<div class="overflow">
+  <p>Este es un párrafo para probar la propiedad Overflow de CSS, por ello necesitamos que este párrafo sobrepase los límites del contendor en el que se encuentra, de tal manera que podamos observar como es que los valores de overflow influyen en el comportamiento de los contenidos excedentes, ya sabemos cuáles son los valores y cómo estos afectan, pero no está demás verlos visualmente y en tu caso aplícalo en tu proyecto para explorar de primera mano...</p>
+</div>
+
+<h2 style="text-align:center"><u>Z-INDEX</u></h2>
+
+<div class="zindex">
+	<div class="zprimero">ROJO</div>
+	<div class="zsegundo">AZUL</div>
+	<div class="ztercero">AMARILLO</div>
+</div>
+	</body>
+</html>
