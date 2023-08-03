@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Posicionamiento</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Tere Ávila Rey">
+		<meta name="generator" content="Editor de Texto Linux">
+		<meta name=”viewport” content=”width=device-width,initial-scale 1.0”>
+		<meta name=”keywords” content=”Pruebas posicionamiento”>
+		<meta name=”description” content=”Pruebas de distintos valores de posicionamiento”>
+		<!-- <link rel="stylesheet" href="misestilos.css"> -->
+		<link rel="icon" href="posi.png">
+		<style>
+		
+		h1, h2, h3, body {
+		text-align:center;
+		
+		}
+		
+		div{
+		  display: flex;
+		 justify-content: center;
+  		align-items: center;
+		}
+		/*PRUEBA FIJO*/
+		.fijo{
+			width:150px;
+			  height:150px;
+			  
+			  background-color:aqua;
+			  position:fixed;
+			  right:50px;
+			  top:50px;
+		}
+		/*PRUEBA RELATIVE*/
+		/*PARA LA POSICIÓN ORIGINAL*/
+		.divamarillo{
+		display: block;
+			width:400px;
+			  height:400px;
+			  background-color:paleturquoise;
+		}
+		
+		/*PARA LA POSICIÓN 1*/
+		.posamarillo {
+			  position: relative;
+			  background-color:aqua;
+			  width:80px;
+			  height:80px;
+		}
+
+		/*PARA LA POSICIÓN 2*/
+		.posamarillo2 {
+			  position: relative;
+			  top:50px;
+			  left:30px;
+			  background-color:aqua;
+			   width:80px;
+			  height:80px;
+		}
+		
+/*PARA LA POSICIÓN 3*/
+		.posamarillo3 {
+			  position: relative;
+			  top:80px;
+			  left: 60px;
+			  background-color:aqua;
+			   width:80px;
+			  height:80px;
+		}
+
+		/*PRUEBA RELATIVE CON ABUELO SIN MOVER AL PADRE*/
+		/*PARA LA POSICIÓN ORIGINAL*/
+		.divazul{
+			display: block;
+			width:400px;
+			  height:400px;
+			  background-color:paleturquoise;
+		}
+		
+				.divazul2{
+					display: block;
+				position: relative;
+			width:200px;
+			  height:200px;
+			  background-color:lightseagreen;
+			  
+		}
+		/*PARA LA POSICIÓN 1*/
+		.posazul {
+			  position: relative;
+			  background-color:aqua;
+			  width:80px;
+			  height:80px;
+		}
+
+		/*PARA LA POSICIÓN 2*/
+		.posazul2 {
+			  position: relative;
+			  top:50px;
+			  left:30px;
+			  background-color:aqua;
+			   width:80px;
+			  height:80px;
+		}
+		
+/*PARA LA POSICIÓN 3*/
+		.posazul3 {
+			  position: relative;
+			  top:80px;
+			  left: 60px;
+			  background-color:aqua;
+			   width:80px;
+			  height:80px;
+		}
+		
+/*PRUEBA RELATIVE CON ABUELO MOVIENDO AL PADRE*/
+		/*PARA LA POSICIÓN ORIGINAL*/
+		.divmovazul{
+			display: block;
+			width:400px;
+			  height:400px;
+			  background-color:paleturquoise;
+		}
+		
+				.divmovazul2{
+					display: block;
+				position: relative;
+			width:200px;
+			  height:200px;
+			  background-color:lightseagreen;
+			    top:50px;
+			  left:30px;
+
+		}
+		/*PARA LA POSICIÓN 1*/
+		.posmovazul {
+			  position: relative;
+			  background-color:aqua;
+			  width:80px;
+			  height:80px;
+		}
+
+		/*PARA LA POSICIÓN 2*/
+		.posmovazul2 {
+			  position: relative;
+			  top:50px;
+			  left:30px;
+			  background-color:aqua;
+			   width:80px;
+			  height:80px;
+		}
+		
+/*PARA LA POSICIÓN 3*/
+		.posmovazul3 {
+			  position: relative;
+			  top:80px;
+			  left: 60px;
+			  background-color:aqua;
+			   width:80px;
+			  height:80px;
+		}
+		
+	/*HERMANOS RELATIVOS*/
+		.padreando{
+			display: block;
+		width:300px;
+			  height:300px;
+			  background-color:paleturquoise;
+		}
+	
+		div.rela {
+		  width: 80px;
+		  height: 40px;
+		  background-color: lightseagreen;
+		}
+
+		div.divdos {
+		  width: 80px;
+		  height: 40px;
+		  position: relative;
+		  left: 80px;
+		  background-color: lightseagreen;
+		}
+
+		div.divcuatro {
+		  width: 80px;
+		  height: 40px;
+		  position: relative;
+		  top: 80px;
+		  left: 80px;
+		  background-color: lightseagreen;
+		}
+		/*RELATIVO SIN MOVER*/
+				.divsolito{
+			width:400px;
+			  height:400px;
+			  background-color:paleturquoise;
+		}
+		
+		/*ABSOLUTO ABSOLUTO ABSOLUTO ABSOLUTO ABSOLUTO ABSOLUTO*/
+		/*ABSOLUTO TRES COLORES SIN MOVER*/
+		/*ABUELO VERDE*/
+		div.absoverde {
+		  position:relative;
+		  width: 400px;
+		  height: 400px;
+		  background-color:	lightseagreen ;
+		}
+		/*PADRE AZUL*/
+		div.absoazul {
+		  width: 200px;
+		  height: 200px;
+		  background-color: turquoise;
+		  position:absolute;
+		  top:0px;
+		  left:0px;
+		}
+		/*HIJO AMARILLO*/
+		div.absoamarillo {
+		  width: 100px;
+		  height: 100px;
+		  background-color: paleturquoise;
+		  position: absolute;
+		  bottom: 0px;
+		  right: 0px;
+		}
+		
+				/*ABSOLUTO TRES COLORES MOVIENDO PADRE NEGATIVO*/
+		/*ABUELO VERDE*/
+		div.absoverde2 {
+		  position:relative;
+		  width: 400px;
+		  height: 400px;
+		  background-color:	lightseagreen ;
+		}
+		/*PADRE AZUL*/
+		div.absoazul2 {
+		  width: 200px;
+		  height: 200px;
+		  background-color: turquoise;
+		  position:absolute;
+		  top:-20px;
+		  left:-10px;
+		}
+		/*HIJO AMARILLO*/
+		div.absoamarillo2 {
+		  width: 100px;
+		  height: 100px;
+		  background-color: paleturquoise;
+		  position: absolute;
+		  bottom: 0px;
+		  right: 0px;
+		}
+		
+						/*ABSOLUTO TRES COLORES MOVIENDO PADRE NEGATIVO*/
+		/*ABUELO VERDE*/
+		div.absoverde3 {
+		  position:relative;
+		  width: 400px;
+		  height: 400px;
+		  background-color:	lightseagreen ;
+		}
+		/*PADRE AZUL*/
+		div.absoazul3 {
+			display: block;
+		  width: 200px;
+		  height: 200px;
+		  background-color: turquoise;
+		  position:absolute;
+		  top:-20px;
+		  left:-10px;
+		}
+		/*HIJO AMARILLO*/
+		div.absoamarillo3 {
+		  width: 100px;
+		  height: 100px;
+		  background-color: paleturquoise;
+		  position: absolute;
+		  bottom: 40px;
+		  right: 30px;
+		}
+		
+		/*ABSOLUTO CON HERMANOS ABSOLUTOS*/
+				.padreando2{
+					display: block;
+		width:300px;
+			  height:300px;
+			  background-color:paleturquoise;
+			  position:relative;
+		}
+	
+		div.abso {
+		  width: 80px;
+		  height: 40px;
+		  background-color: lightseagreen;
+		}
+
+		div.divdosabso {
+		  width: 80px;
+		  height: 40px;
+		  position: absolute;
+		  left: 90px;
+		  background-color: lightseagreen;
+		}
+
+		div.divcuatroabso {
+		  width: 80px;
+		  height: 40px;
+		  position: absolute;
+		  left: 100px;
+		  background-color: lightseagreen;
+		}
+		
+		/*EJEMPLO CON TRANSFORM Y TRANSLATE*/
+		
+		.transform {
+			display:block;
+			position:relative;
+			height:100px;
+			width:200px;
+			background-color: #ffff99;
+			color: #333;
+			}
+		.transform_content{
+		display:block;
+		position:absolute;
+		left:50%;
+		top:50%;
+		transform:translate(-50%, -50%);
+		background-color: white;
+		padding: 20px;
+		}
+		</style>
+	</head>
+	<body>
+		<h1>Pruebas de posicionamiento</h1>
+		<div class="fijo">Fijo</div>
+		
+		<h2>Posicionamiento relativo</h2>
+		<h3>Posicionamiento relativo con un padre</h3>
+		
+				<div class="divamarillo"><br>Bloque sin posicionamiento
+			<div class="posamarillo">Bloque turquesa relativo </div>
+			<div class="posamarillo2">Bloque turquesa 2  relativo</div>
+			<div class="posamarillo3">Bloque turquesa 3  relativo</div>
+		</div>
+		
+				<h3>Posicionamiento relativo con abuelo sin mover al padre</h3>
+		
+				<div class="divazul"><br>Bloque sin posicionamiento
+					<div class="divazul2"><br>Bloque relativo
+			<div class="posazul">Bloque turquesa relativo</div>
+			<div class="posazul2">Bloque turquesa 2 relativo</div>
+			<div class="posazul3">Bloque turquesa 3 relativo</div>
+		</div>
+		</div>
+		
+			<h3>Posicionamiento relativo con abuelo moviendo al padre</h3>
+		
+				<div class="divmovazul"><br>Bloque sin posicionamiento
+					<div class="divmovazul2"><br>Bloque relativo
+			<div class="posmovazul">Bloque turquesa relativo</div>
+			<div class="posmovazul2">Bloque turquesa 2 relativo</div>
+			<div class="posmovazul3">Bloque turquesa 3 relativo</div>
+		</div>
+		</div>
+		<h3>Posicionamiento relativo con hermanos</h3>
+		<div class="padreando">Padreando
+		<div class="rela"> Elemento 1 </div>
+		<div class="divdos"> Elemento 2 </div>
+		<div class="rela"> Elemento 3 </div>
+		<div class="divcuatro"> Elemento 4 </div>
+		<div class="rela"> Elemento 5 </div>
+		</div>
+		<h3>Posicionamiento relativo sin mover</h3>
+		<div class="divsolito">Este es relativo pero no se ha movido</div>
+		
+		<h2>Posicionamiento absoluto</h2>
+		<h3>Posicionamiento absoluto de tres colores sin mover</h3>
+		
+		<div class="absoverde">Relativo
+			  <div class="absoazul">Absoluto
+					<div class="absoamarillo">Absoluto</div> 
+			  </div>
+		</div>
+		<h3>Posicionamiento absoluto de tres colores moviendo padre negativo</h3>
+				<div class="absoverde2">Relativo
+			  <div class="absoazul2">Relativo
+					<div class="absoamarillo2">Absoluto</div> 
+			  </div>
+		</div>
+				<h3>Posicionamiento absoluto de tres colores moviendo padre e hijo</h3>
+				<div class="absoverde3">Relativo
+			  <div class="absoazul3">Relativo
+					<div class="absoamarillo3">Absoluto</div> 
+			  </div>
+		</div>
+			<h3>Posicionamiento absoluto con hermanos</h3>
+		<div class="padreando2"><br>Padreando
+		<div class="abso"> Elemento 1 </div>
+		<div class="divdosabso"> Elemento 2 </div>
+		<div class="abso"> Elemento 3 </div>
+		<div class="divcuatroabso"> Elemento 4 </div>
+		<div class="abso"> Elemento 5 </div>
+		</div>
+	
+	<h3>EJEMPLO CON TRANSFORM Y TRANSLATE SIN DISPLAY FLEX</h3>
+	
+	<div class="transform">
+		<div class="transform_content">
+			Transform
+		</div>
+	</div>
+	</body>
+</html>

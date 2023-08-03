@@ -9,8 +9,16 @@
 		<meta name=”keywords” content=”html5 estructura etiquetas atributos”>
 		<meta name=”description” content=”Mi primera plantilla en html5”>
 		<!-- <link rel="stylesheet" href="misestilos.css"> -->
-		<link rel="icon" href="miicono.ico">
+		<link rel="icon" href="icon.png">
 		<style>
+		
+		
+		/*ESTILO PROPIO PARA TÍTULOS  PARA DIFERENCIAR MEJOR*/
+		
+		h1, h2, h3, h4 {
+		background-color: black;
+		color: white;
+		}
 		
 		/*PROPIEDADES PARA TEXTO*/
 			p.cursiv {font-family: cursive;}
@@ -87,7 +95,6 @@
 			p.neg  {letter-spacing: -2px;}
 			p.posit {word-spacing: 8px;}
 			p.nega {word-spacing: -2px;}
-			
 			p.pre {white-space: pre;}
 			p.nowrap {white-space: nowrap;}
 			p.prewrap {white-space:pre-wrap;}
@@ -115,6 +122,9 @@
 			word-spacing: 8px
 		}
 		
+		.sincss{
+		background-
+		}
 		/*PROPIEDADES DE ANCHO Y ALTO*/
 		img.primeraimg {
 			width: 400px;
@@ -686,8 +696,8 @@
 
 		/*Z-INDEX*/
 		div.zindex{
-		width: 500px;
-		height: 500px;
+		width: 300px;
+		height: 300px;
 		position: relative;
 		}
 		div.zprimero {
@@ -722,7 +732,7 @@
 	<body>
 		<h1 style="text-align:center"><u>CSS</u></h1>
 		<h2 style="text-align:center"><u>CSS PARA TEXTO</u></h2>
-		<h3><u>Familias tipográficas</u></h3>
+		<h3 style="text-align:center"><u>Familias tipográficas</u></h3>
 			<p class="cursiv"> Este es un párrafo con tipo de letra cursive</p>
 			<p class="geor"> Este es un párrafo con tipo de letra georgia</p>
 			<p class="fant"> Este es un párrafo con tipo de letra fantasy</p>
@@ -730,7 +740,7 @@
 			<p class="monos"> Este es un párrafo con tipo de letra monospace</p>	
 			<p> Párrafo con respaldos de tipografia, en caso no pueda cargar el preferido</p>
 		
-		<h3><u>Tamaño de fuente</u></h3>
+		<h3 style="text-align:center"><u>Tamaño de fuente</u></h3>
 			<p class="peque">Texto con tamaño de letra pequeño</p>
 			<p class="medio"> Texto con tamaño de letra mediano </p>
 			<p class="grande"> Texto con tamaño de letra grande </p>
@@ -741,7 +751,7 @@
 			<p class="vtr">Texto tamaño de letra 23</p>
 			<p class="cua">Texto tamaño de letra 40</p>
 
-		<h3><u>Estilo de fuente</u></h3>
+		<h3 style="text-align:center"><u>Estilo de fuente</u></h3>
 			<p class="normal">Este es un texto con es estilo de fuente normal</p>
 			<p class="italic"> Texto con estilo de fuente cursiva</p>
 			<p class="oblique"> Texto con estilo oblicuo, similar a italic </p>
@@ -755,11 +765,11 @@
 			<p class="sietcien"> testo con peso 700</p>
 			<p class="novcien"> testo con peso 900</p>
 
-		<h3><u>Variantes de texto</u></h3>	
+		<h3 style="text-align:center"><u>Variantes de texto</u></h3>	
 			<p class="normal"> Texto con variante normal </p>
 			<p class="small"> Texto con variante small caps</p>
 			
-		<h3><u>Color de texto</u></h3>
+		<h3 style="text-align:center"><u>Color de texto</u></h3>
 			<p class="red"> Texto de color rojo </p>
 			<p class="blue"> Texto de color azul </p>
 			<p class="green"> Texto de color verde </p>
@@ -768,13 +778,13 @@
 			<li>Tijera </li>
 			<p class="yellow"> Texto de color amarillo </p>
 		
-		<h3><u>Alineación de texto</u></h3>
+		<h3 style="text-align:center"><u>Alineación de texto</u></h3>
 		<p class="left"> Este es un parrafor alineado a la izquierda, mediante la propiedad y text-align de CSS. </p>
 		<p class="right"> Este párrafo será alineado a la derecha y lo verás claramente por que es muy diferente al anterior. </p>
 		<p class="center"> Texto alineado al centro con CSS </p>
 		<p class="justify"> Este hermoso texto será justificado con CSS, de tal manera que todas las lineas de este párrafo se encuentre con margenes iguales. En ocasiones es necesario o quizá para darle un toque estético cautivador, un estilo que necesita varias lineas de texto para poder ser aprecidado en toda su plenitud; ahora que tenemos varias lienas de floro, puedes deleitar tus ojos con este justificado de texto. </p>
 		
-		<h3><u>Alineación vertical de texto</u></h3>
+		<h3 style="text-align:center"><u>Alineación vertical de texto</u></h3>
 		<table border="1" cellpadding="2" cellspacing="0" style="height:200px;">
 			<tr>
 				 <td class="top">texto arriba</td>
@@ -782,18 +792,18 @@
 				 <td class="bot">texto abajo</td>
 			</tr>
 		</table>
-		<h3><u>Alineación con span</u></h3>
+		<h3 style="text-align:center"><u>Alineación con span</u></h3>
 		<p>1 Elemento <span class="baseline">en baseline</span> ejemplo</p>
 		<p>2 Elemento <span class="sub">en sub</span> ejemplo.</p>
 		<p>3 Elemento <span class="super">en super</span> ejemplo.</p>
 		<p>4 Elemento <span class="pix">con número -30px </span> ejemplo..</p>
 		
-		<h3><u>Alineación con div</u></h3>
+		<h3 style="text-align:center"><u>Alineación con div</u></h3>
 		<div class="bloque">
    <div class="tex">
 este es un texto dentro de un contenedor div con nombre main y será alineado al medio verticamente   </div>
 </div>
-		<h3><u>Decoración de texto</u></h3>
+		<h3 style="text-align:center"><u>Decoración de texto</u></h3>
 		
 		<p class="none">Este es un texto sin decoración.</p>
 		<p class="inherit">Texto con decoración heredado.</p>
@@ -801,27 +811,27 @@ este es un texto dentro de un contenedor div con nombre main y será alineado al
 		<p class="through">Texto con decoración al medio.</p>
 		<p class="underline">Texto con decoración debajo.</p>
 
-		<h3><u>Indentado de texto</u></h3>
+		<h3 style="text-align:center"><u>Indentado de texto</u></h3>
 		<p class="indent"> Este es un texto en el que aplicaremos la propiedad text-indent que sirve para aplicar un espacio al principio de la primera linea de este párrafo. Notaras que la primera linea de este texto se encuentra a una distancia de 70px desde el borde y ello se debe a que el valor de esta propiedad es de 70px.</p>
 
-		<h3><u>Sombra de texto</u></h3>
+		<h3 style="text-align:center"><u>Sombra de texto</u></h3>
 		<h4> Título de cuarto nivel</h4>
 		<h5> Título con tres sombras de colores </h5>
 		
-		<h3><u>Transformación de texto</u></h3>
+		<h3 style="text-align:center"><u>Transformación de texto</u></h3>
 		<p class="capi"> texto con transformación capitalize en CSS</p>
 		<p class="upp"> texto con transformación uppercase en CSS</p>
 		<p class="low"> texto con transformación lowercase en CSS</p>
 		
-		<h3><u>Interespaciado de texto</u></h3>
+		<h3 style="text-align:center"><u>Interespaciado de texto</u></h3>
 		<p class="posit"> Texto con espaciado de 4px positivo </p>
 		<p class="neg"> Texto con espaciado de -2px negativo</p>
 		
-		<h3><u>Espaciado de texto</u></h3>
+		<h3 style="text-align:center"><u>Espaciado de texto</u></h3>
 		<p class="posit"> texto con espaciado de palbras en 8px positivo </p>
 		<p class="nega"> texto con espaciado de palabras negativo con -2px </p>
 		
-		<h3><u>Espacio en blanco de texto</u></h3>
+		<h3 style="text-align:center"><u>Espacio en blanco de texto</u></h3>
 		<p class="pre"> ESTILO PRE      Ejemplo de párrafo posee espacios como este        y otro      además  otro          para que veas la diferencia <br> y sabes, a este párrafo le colocaremos un estilo de espacios PRE con CSS y veamos que sucede en los resultados.</p><hr>
 
 		<p class="nowrap"> ESTILO NOWRAP     Ejemplo de párrafo posee espacios como este        y otro      además  otro          para que veas la diferencia <br> y sabes, a este párrafo le colocaremos un estilo de espacios NOWRAP con CSS y veamos que sucede en los resultados.</p><hr>
@@ -829,12 +839,12 @@ este es un texto dentro de un contenedor div con nombre main y será alineado al
 		<p class="prewrap"> ESTILO PRE-WRAP     Ejemplo de párrafo posee espacios como este        y otro      además  otro          para que veas la diferencia <br> y sabes, a este párrafo le colocaremos un estilo de espacios PRE-WRAP con CSS y veamos que sucede en los resultados.</p>
 
 
-		<h3><u>Títulos con CSS</u></h3>
+		<h3 style="text-align:center"><u>Títulos con CSS</u></h3>
 		
 		<h1 class="concss">Título de ejemplo con CSS</h1>
 		<h1 class="sincss">Título de ejemplo sin CSS</h1>
 		
-		<h3><u>Textos con CSS</u></h3>
+		<h3 style="text-align:center"><u>Textos con CSS</u></h3>
 		<p class="concss">Texto de ejemplo final para demostracion con CSS</p>
 		<p class="sincss">Texto de ejemplo final para demostracion sin CSS</p>
 		
@@ -849,7 +859,7 @@ este es un texto dentro de un contenedor div con nombre main y será alineado al
 		
 		<h2 style="text-align:center"><u>BORDER, PADDING Y MARGIN</u></h2>
 		
-		<h3><u>padding</u></h3>
+		<h3 style="text-align:center"><u>padding</u></h3>
 		
 		<img class="imagenpadding" src="clown.jpg" alt="foto de payaso" height="150px" width="250px" border="1px"/>
 		
@@ -857,7 +867,7 @@ este es un texto dentro de un contenedor div con nombre main y será alineado al
 		
 		<img class="imagenpaddingtop" src="clown.jpg" alt="foto de gatito" height="250px" width="400px" border="1px"/>
 		 
-		<h3><u>border</u></h3>
+		<h3 style="text-align:center"><u>border</u></h3>
 		 
 		<p class="textborde"> Forma simple de poner borde en CSS </p>
 		<p class="textborde3"> Elemeto de texto con borde de 3px de ancho </p>
@@ -870,7 +880,7 @@ este es un texto dentro de un contenedor div con nombre main y será alineado al
 		<p class="textbordecompleto"> Elemento de texto con borde de 5px de ancho, color azul y estilo punteado en CSS. </p>
 		<p class="textbordevariado"> Este es un párrafo con borde variado en color, estilo y dimensión.</p>
 		
-		<h3><u>margin</u></h3>
+		<h3 style="text-align:center"><u>margin</u></h3>
 		
 		<div class="contenedormargin">
 			<p class="marginnegativo"> Párrafo con -15px márgenes uniformes.</p>
@@ -900,7 +910,7 @@ este es un texto dentro de un contenedor div con nombre main y será alineado al
 	
 		<h2 style="text-align:center"><u>BACKGROUND</u></h2>
 		
-		<h3><u>background-color</u></h3>
+		<h3 style="text-align:center"><u>background-color</u></h3>
 		
 		<div class="bgcontenedor">
 		<p class="bgmorado"> Este es un párrafo con color de fondo morado (palabra clave)</p>
@@ -1193,7 +1203,7 @@ este es un texto dentro de un contenedor div con nombre main y será alineado al
 		<p class="tonone"> Este es un párrafo al cual se le aplicará la propiedad display con valor none para que quede oculto en la página web.</p>
 		
 		<h2 style="text-align:center"><u>POSICIONAMIENTO</u></h2>
-		<h3><u>Posicionamiento relative</u></h3>
+		<h3 style="text-align:center"><u>Posicionamiento relative</u></h3>
 		<div class="divamarillo">
 			<div class="posamarillo">Bloque amarillo </div>
 			<div class="posamarillo2">Bloque amarillo 2</div>
@@ -1207,7 +1217,7 @@ este es un texto dentro de un contenedor div con nombre main y será alineado al
 		<div class="rela"> Elemento 5 </div>
 		<br>
 		<br>
-		<h3><u>Posicionamiento absoluto</u></h3>
+		<h3 style="text-align:center"><u>Posicionamiento absoluto</u></h3>
 		<div class="absoverde">
 			  <div class="absoazul">
 					<div class="absoamarillo"></div> 
@@ -1223,7 +1233,7 @@ este es un texto dentro de un contenedor div con nombre main y será alineado al
 			</div>
 			<div class="fijo1"> FIJO 1 </div>
 			<div class="fijo2"> FIJO 2</div>
-			<h3><u>Float</u></h3>
+			<h3 style="text-align:center"><u>Float</u></h3>
 			<div>
 				<div class="floatleft"> BLOQUE1</div>
 				<div class="floatleft"> BLOQUE2 </div>
@@ -1238,7 +1248,7 @@ este es un texto dentro de un contenedor div con nombre main y será alineado al
 				<div class="floatright"> BLOQUE8</div>
 			</div>
 			<br><br><br><br>
-			<h3><u>Clear</u></h3>
+			<h3 style="text-align:center"><u>Clear</u></h3>
 <div class="clearprimero">PRIMERO</div>
 <div class="clearsegundo">SEGUNDO</div>
 
