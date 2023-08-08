@@ -1,0 +1,186 @@
+/*EJERCICIO 1*/
+
+.textoej1 {
+	font-weight: bold;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 14pt;
+}
+
+.textorojo1 {
+	color: red;
+}
+
+.textoazul1 {
+	color: blue;
+}
+
+/*EJERCICIO 2*/
+p.textoej2 {
+	font-family: 'Times New Roman', Times, serif;
+}
+
+a.linkverde2 {
+	color: green;
+}
+
+.rojopeque2 {
+	color: red;
+	font-weight: bold;
+}
+
+.subover2 {
+	text-decoration: overline underline;
+}
+
+.supergrande2 {
+	font-size: 22pt;
+	font-weight: bold;
+}
+
+.azulbold2 {
+	font-weight: bold;
+	color: blue;
+	font-size: 16pt;
+}
+
+.rojosubgrande2 {
+	font-weight: bold;
+	color: red;
+	font-size: 16pt;
+	text-decoration: underline;
+}
+
+/*EJERCICIO 3*/
+
+.links3 {
+	font-weight: bold;
+	font-size: 23pt;
+	display: block;
+}
+
+.linkmarca {
+	color: yellow;
+}
+
+.linkmarca:hover {
+	color: green;
+}
+
+.linkas {
+	color: purple;
+}
+
+.linkas:hover {
+	color: red;
+}
+
+/*EJERCICIO 4*/
+
+.nav4{
+	background-color: #D6AFDC;
+	width:93%;
+	padding:20px;
+}
+.boton4{
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+}
+.boton4:hover{
+	background-color: blue;
+}
+
+/*EJERCICIO 5*/
+
+.nav5{
+	background-color: #D6AFDC;
+	display:flex;
+	padding:20px;
+	margin:20px;
+}
+.boton5{
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+}
+.boton5:hover{
+	background-color: blue;
+}
+
+/*EJERCICIO 6*/
+
+#table6{
+	background-color: yellow;
+	width: 100%;
+	border: 1px dotted black;
+	border-collapse: collapse;
+	border-bottom: 2px dashed red;
+}
+#table6 th{
+	color: red;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-style: italic;
+}
+#table6 th::first-letter{
+	font-weight: bold;
+	font-size: 18pt;
+}
+#table6 td{
+	border: 1px dotted black;
+}
+
+/*EJERCICIO 7*/
+.cabecera7{
+	font-size:2em;
+	font-weight: bold;
+	margin-bottom: 0.5em;
+}
+.menu7{
+	margin-bottom: 2em;
+}
+.boton7{
+	text-decoration: none;
+	color: #2e6dd1;
+	padding: 15px;
+}
+.boton7:hover{
+	color: black;
+}
+
+#DivCastilla{
+	width: 80%;
+	max-width: 950px;
+	background-color: grey;
+	border: 1px solid red;
+}
+
+#DivCastilla h2{
+	color: red;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#DivCastilla p{
+	color: white;
+}
+#DivCastilla a{
+	color: #154ca3;
+}
+/*EJERCICIO 8*/
+.principito{
+	width:150px;
+	float:left;
+	margin-right: 30px;
+	margin-left: 30px;
+}
+
+.orson{
+	width:150px;
+	float:right;
+	margin-right: 30px;
+	margin-left: 30px;
+}
+.Nombre8{
+	text-align:center;
+}
+.text8{
+	text-align: justify;
+}
